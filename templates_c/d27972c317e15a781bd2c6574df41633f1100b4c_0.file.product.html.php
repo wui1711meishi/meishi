@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 14:55:00
+/* Smarty version 3.1.30, created on 2018-04-18 16:21:35
   from "E:\phpstudy\WWW\meishi\templates\index\product.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6ebc467fee0_85697996',
+  'unifunc' => 'content_5ad7000f3974b5_35650336',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd27972c317e15a781bd2c6574df41633f1100b4c' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\product.html',
-      1 => 1524034498,
+      1 => 1524039693,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6ebc467fee0_85697996 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad7000f3974b5_35650336 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -189,29 +189,28 @@ gw_25.png" alt="">
                 <li>下一页</li>
             </ul>
         </div>
-</div>
-
-<footer>
-    <div class="empty"></div>
-    <div class="dimgray"></div>
-    <div class="gray">
-        <p>北京市公安局朝阳分局备案编号:110105000501   Copyright © 2006-2016 ZCOOL</p>
-    </div>
-    <div class="join">
-        <span></span>
-        <div class="join_bottom">
-            <div class="join_left">
-                <img src="<?php echo INDEX_IMG_PATH;?>
-joinus_16.png" alt="">
-                <p>请留下您的联系方式</p>
-            </div>
-            <form action="">
-                <textarea name="" id="" cols="30" rows="10" resize="none"></textarea>
-                <botton>发 送</botton>
-            </form>
+    <footer>
+        <div class="empty"></div>
+        <div class="dimgray"></div>
+        <div class="gray">
+            <p>北京市公安局朝阳分局备案编号:110105000501   Copyright © 2006-2016 ZCOOL</p>
         </div>
-    </div>
-</footer>
+        <div class="join">
+            <span></span>
+            <div class="join_bottom">
+                <div class="join_left">
+                    <img src="<?php echo INDEX_IMG_PATH;?>
+joinus_16.png" alt="">
+                    <p>请留下您的联系方式</p>
+                </div>
+                <form action="">
+                    <textarea name="" id="" cols="30" rows="10" resize="none"></textarea>
+                    <botton>发 送</botton>
+                </form>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html><?php }
 }
