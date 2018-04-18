@@ -225,17 +225,16 @@ header{
     height:392px;
     width:100%;
     position: absolute;
-    bottom:0;
+    bottom:-80px;
     left:0;
-
-    background-image: url("images/wq11.jpg");
+    background-image: url("../images/wq11.jpg");
     background-repeat: no-repeat;
     background-position: 50px -170px;
 }
 .show_s_banner{
     width:1079px;
     height:100%;
-	margin-left: 210px;
+	margin:0 auto;
     position: relative;
 }
 .show_s_banner_li1{
@@ -274,10 +273,10 @@ li.active{
     transform: rotate(0deg);
 }
 .show_s_banner_li1 .show_banner_pic1:nth-of-type(2){
-    right:390px;
+    right:454px;
 }
 .show_s_banner_li1 .show_banner_pic1:last-of-type{
-    right:20px;
+    right:148px;
 }
 .show_banner_pic1 a{
     width:100%;
@@ -293,7 +292,7 @@ li.active{
     width:15px;
     position: absolute;
     top:90px;
-    right:150px;
+    right:190px;
 }
 .show_lbdactive{
     background: #fb716f;
@@ -303,6 +302,7 @@ li.active{
     margin-bottom: 15px;
     height:13px;
     border:2px solid #fb716f;
+	cursor: pointer;
     border-radius: 50%;
 }
 .show_bottom{
@@ -534,6 +534,7 @@ div.introduceCactive{
     height:770px;
     margin:0 auto 180px;
     position: relative;
+	overflow: hidden;
 }
 .news::after{
     content:'';

@@ -57,12 +57,12 @@ window.onload=function () {
         proli[n].classList.add('active');
         prolbd[n].classList.add('show_lbdactive')
     }
-    let prot=setInterval(promove,3000);
+    let prot=setInterval(promove,5000);
     probanner.onmouseenter=function () {
         clearInterval(prot);
     }
     probanner.onmouseleave=function () {
-        prot=setInterval(promove,3000);
+        prot=setInterval(promove,5000);
     }
     prolbd.forEach(function (v,i) {
        v.onclick=function () {

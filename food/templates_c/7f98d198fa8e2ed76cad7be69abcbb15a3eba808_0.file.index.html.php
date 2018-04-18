@@ -1,11 +1,42 @@
+<?php
+/* Smarty version 3.1.30, created on 2018-04-18 09:12:25
+  from "E:\phpstudy\WWW\food\templates\index\index.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5ad69b796f6ae0_36957117',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7f98d198fa8e2ed76cad7be69abcbb15a3eba808' => 
+    array (
+      0 => 'E:\\phpstudy\\WWW\\food\\templates\\index\\index.html',
+      1 => 1524013944,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ad69b796f6ae0_36957117 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="{INDEX_CSS_PATH}index.css">
-	<script src="{INDEX_JS_PATH}index.js"></script>
-	<script src="{INDEX_JS_PATH}jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
+index.css">
+	<?php echo '<script'; ?>
+ src="<?php echo INDEX_JS_PATH;?>
+index.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="<?php echo INDEX_JS_PATH;?>
+jquery-3.3.1.min.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <!--头部搜索-->
@@ -47,7 +78,8 @@
 			<div class="westbake_l_txt4"><a href="">MORE</a></div>
 		</div>
 		<div class="westbake_right">
-			<img src="{INDEX_IMG_PATH}wq1.jpg" alt="">
+			<img src="<?php echo INDEX_IMG_PATH;?>
+wq1.jpg" alt="">
 		</div>
 	</section>
 <!--产品展示-->
@@ -65,51 +97,60 @@
 					<li class="show_s_banner_li1">
 						<div class="show_banner_pic1">
 							<a href="">
-								<img src="{INDEX_IMG_PATH}wqdfds1_01.png" alt="">
+								<img src="<?php echo INDEX_IMG_PATH;?>
+wqdfds1_01.png" alt="">
 							</a>
 						</div>
 						<div class="show_banner_pic1">
 							<a href="">
-								<img src="{INDEX_IMG_PATH}wqdfds1_06.png" alt="">
+								<img src="<?php echo INDEX_IMG_PATH;?>
+wqdfds1_06.png" alt="">
 							</a>
 						</div>
 						<div class="show_banner_pic1">
 							<a href="">
-								<img src="{INDEX_IMG_PATH}wqdfds1_17.png" alt="">
+								<img src="<?php echo INDEX_IMG_PATH;?>
+wqdfds1_17.png" alt="">
 							</a>
 						</div>
 					</li>
 					<li class="show_s_banner_li1 show_s_banner_li2">
 						<div class="show_banner_pic1">
 							<a href="">
-								<img src="{INDEX_IMG_PATH}wqdfds1_06.png" alt="">
+								<img src="<?php echo INDEX_IMG_PATH;?>
+wqdfds1_06.png" alt="">
 							</a>
 						</div>
 						<div class="show_banner_pic1">
 							<a href="">
-								<img src="{INDEX_IMG_PATH}wqdfds1_17.png" alt="">
+								<img src="<?php echo INDEX_IMG_PATH;?>
+wqdfds1_17.png" alt="">
 							</a>
 						</div>
 						<div class="show_banner_pic1">
 							<a href="">
-								<img src="{INDEX_IMG_PATH}wqdfds1_01.png" alt="">
+								<img src="<?php echo INDEX_IMG_PATH;?>
+wqdfds1_01.png" alt="">
 							</a>
 						</div>
 					</li>
 					<li class="show_s_banner_li1 show_s_banner_li3">
 						<div class="show_banner_pic1">
 							<a href="">
-								<img src="{INDEX_IMG_PATH}wqdfds1_17.png" alt="">
+								<img src="<?php echo INDEX_IMG_PATH;?>
+wqdfds1_17.png" alt="">
 							</a>
 						</div>
 						<div class="show_banner_pic1">
 							<a href="">
-								<img src="{INDEX_IMG_PATH}wqdfds1_06.png" alt="">
+								<img src="<?php echo INDEX_IMG_PATH;?>
+wqdfds1_06.png" alt="">
 							</a>
 						</div>
 						<div class="show_banner_pic1">
 							<a href="">
-								<img src="{INDEX_IMG_PATH}wqdfds1_01.png" alt="">
+								<img src="<?php echo INDEX_IMG_PATH;?>
+wqdfds1_01.png" alt="">
 							</a>
 						</div>
 					</li>
@@ -136,7 +177,8 @@
 					<p>阳光的味道，自然的美味，新鲜到最后一篇，美国里根牌面包 爱上精致生活 爱上斯威特</p>
 				</div>
 			</div>
-			<img src="{INDEX_IMG_PATH}wqmbv.jpg" alt="">
+			<img src="<?php echo INDEX_IMG_PATH;?>
+wqmbv.jpg" alt="">
 		</div>
 	</div>
 <!--面点师-->
@@ -156,7 +198,8 @@
 				<div class="baker_banner_tiao">
 					<div class="baker_b_every">
 						<a href="">
-							<img src="{INDEX_IMG_PATH}wqdsada_06.png" alt="">
+							<img src="<?php echo INDEX_IMG_PATH;?>
+wqdsada_06.png" alt="">
 							<div class="baker_every_introduceN">
 								<span>李师傅</span>
 								<span>著名烘焙大师 西点师</span>
@@ -170,7 +213,8 @@
 					</div>
 					<div class="baker_b_every">
 						<a href="">
-							<img src="{INDEX_IMG_PATH}qqq.jpg" alt="">
+							<img src="<?php echo INDEX_IMG_PATH;?>
+qqq.jpg" alt="">
 							<div class="baker_every_introduceN">
 								<span>詹姆斯</span>
 								<span>著名烘焙大师 西点师</span>
@@ -184,7 +228,8 @@
 					</div>
 					<div class="baker_b_every">
 						<a href="">
-							<img class="imgactive" src="{INDEX_IMG_PATH}wqdsada_09.png" alt="">
+							<img class="imgactive" src="<?php echo INDEX_IMG_PATH;?>
+wqdsada_09.png" alt="">
 							<div class="baker_every_introduceN introduceNactive">
 								<span>Toms</span>
 								<span>著名烘焙大师 西点师</span>
@@ -198,7 +243,8 @@
 					</div>
 					<div class="baker_b_every">
 						<a href="">
-							<img src="{INDEX_IMG_PATH}wwww.jpg" alt="">
+							<img src="<?php echo INDEX_IMG_PATH;?>
+wwww.jpg" alt="">
 							<div class="baker_every_introduceN">
 								<span>+闻 周</span>
 								<span>著名烘焙大师 西点师</span>
@@ -212,7 +258,8 @@
 					</div>
 					<div class="baker_b_every">
 						<a href="">
-							<img src="{INDEX_IMG_PATH}eeee.jpg" alt="">
+							<img src="<?php echo INDEX_IMG_PATH;?>
+eeee.jpg" alt="">
 							<div class="baker_every_introduceN">
 								<span>Jean</span>
 								<span>著名烘焙大师 西点师</span>
@@ -243,7 +290,8 @@
 			<div class="news_con_every">
 				<div class="new_every_top">
 					<a href="">
-						<img src="{INDEX_IMG_PATH}wqdvdvssc_03.png" alt="">
+						<img src="<?php echo INDEX_IMG_PATH;?>
+wqdvdvssc_03.png" alt="">
 					</a>
 				</div>
 				<div class="new_every_bottom">
@@ -278,7 +326,8 @@
 			<div class="news_con_every">
 				<div class="new_every_top">
 					<a href="">
-						<img src="{INDEX_IMG_PATH}wqdvdvssc_03.png" alt="">
+						<img src="<?php echo INDEX_IMG_PATH;?>
+wqdvdvssc_03.png" alt="">
 					</a>
 				</div>
 				<div class="new_every_bottom">
@@ -315,4 +364,5 @@
 	</div>
 
 </body>
-</html>
+</html><?php }
+}
