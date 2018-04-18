@@ -1,219 +1,199 @@
-<!DOCTYPE HTML><html lang='zh_CN' dir='ltr' class='ie ie7'><head><meta charset="utf-8" /><meta name="referrer" content="no-referrer" /><meta name="robots" content="noindex,nofollow" /><meta http-equiv="X-UA-Compatible" content="IE=Edge"><style id="cfs-style">html{display: none;}</style><link rel="icon" href="favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="./themes/pmahomme/jquery/jquery-ui-1.11.4.css" /><link rel="stylesheet" type="text/css" href="js/codemirror/lib/codemirror.css?v=4.6.4" /><link rel="stylesheet" type="text/css" href="js/codemirror/addon/hint/show-hint.css?v=4.6.4" /><link rel="stylesheet" type="text/css" href="js/codemirror/addon/lint/lint.css?v=4.6.4" /><link rel="stylesheet" type="text/css" href="phpmyadmin.css.php?nocache=5938092825ltr" /><link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/printview.css?v=4.6.4" media="print" id="printcss"/><title>localhost / Local Databases | phpMyAdmin 4.6.4</title><script data-cfasync='false' type='text/javascript' src='js/whitelist.php?lang=zh_CN&amp;db=&amp;token=30c54d554a60f501f6659633c5fe7728&v=4.6.4'></script><script data-cfasync="false" type="text/javascript" src="js/get_scripts.js.php?scripts%5B%5D=jquery/jquery-2.1.4.min.js&amp;scripts%5B%5D=sprintf.js&amp;scripts%5B%5D=ajax.js&amp;scripts%5B%5D=keyhandler.js&amp;scripts%5B%5D=jquery/jquery-ui-1.11.4.min.js&amp;scripts%5B%5D=jquery/jquery.cookie.js&amp;scripts%5B%5D=jquery/jquery.mousewheel.js&amp;scripts%5B%5D=jquery/jquery.event.drag-2.2.js&amp;scripts%5B%5D=jquery/jquery-ui-timepicker-addon.js&amp;scripts%5B%5D=jquery/jquery.ba-hashchange-1.3.js&amp;v=4.6.4"></script><script data-cfasync="false" type="text/javascript" src="js/get_scripts.js.php?scripts%5B%5D=jquery/jquery.debounce-1.0.5.js&amp;scripts%5B%5D=menu-resizer.js&amp;scripts%5B%5D=cross_framing_protection.js&amp;scripts%5B%5D=rte.js&amp;scripts%5B%5D=tracekit/tracekit.js&amp;scripts%5B%5D=error_report.js&amp;scripts%5B%5D=config.js&amp;scripts%5B%5D=doclinks.js&amp;scripts%5B%5D=functions.js&amp;scripts%5B%5D=navigation.js&amp;v=4.6.4"></script><script data-cfasync="false" type="text/javascript" src="js/get_scripts.js.php?scripts%5B%5D=indexes.js&amp;scripts%5B%5D=common.js&amp;scripts%5B%5D=page_settings.js&amp;scripts%5B%5D=codemirror/lib/codemirror.js&amp;scripts%5B%5D=codemirror/mode/sql/sql.js&amp;scripts%5B%5D=codemirror/addon/runmode/runmode.js&amp;scripts%5B%5D=codemirror/addon/hint/show-hint.js&amp;scripts%5B%5D=codemirror/addon/hint/sql-hint.js&amp;scripts%5B%5D=codemirror/addon/lint/lint.js&amp;scripts%5B%5D=codemirror/addon/lint/sql-lint.js&amp;v=4.6.4"></script><script data-cfasync="false" type="text/javascript" src="js/get_scripts.js.php?scripts%5B%5D=console.js&amp;v=4.6.4"></script><script data-cfasync='false' type='text/javascript' src='js/messages.php?lang=zh_CN&amp;db=&amp;token=30c54d554a60f501f6659633c5fe7728&v=4.6.4'></script><script data-cfasync='false' type='text/javascript' src='js/get_image.js.php?theme=pmahomme&v=4.6.4'></script><script data-cfasync="false" type="text/javascript">// <![CDATA[
-PMA_commonParams.setAll({common_query:"?token=30c54d554a60f501f6659633c5fe7728",opendb_url:"db_structure.php",safari_browser:"0",collation_connection:"utf8mb4_unicode_ci",lang:"zh_CN",server:"1",table:"",db:"",token:"30c54d554a60f501f6659633c5fe7728",text_dir:"ltr",show_databases_navigation_as_tree:"1",pma_text_default_tab:"浏览",pma_text_left_default_tab:"结构",pma_text_left_default_tab2:"",LimitChars:"50",pftext:"P",confirm:"1",LoginCookieValidity:"1440",logged_in:"1",PMA_VERSION:"4.6.4",auth_type:"cookie"});
-ConsoleEnterExecutes=false
-AJAX.scriptHandler.add("jquery/jquery-2.1.4.min.js",0).add("whitelist.php?lang=zh_CN&amp;db=&amp;token=30c54d554a60f501f6659633c5fe7728",1).add("sprintf.js",1).add("ajax.js",0).add("keyhandler.js",1).add("jquery/jquery-ui-1.11.4.min.js",0).add("jquery/jquery.cookie.js",0).add("jquery/jquery.mousewheel.js",0).add("jquery/jquery.event.drag-2.2.js",0).add("jquery/jquery-ui-timepicker-addon.js",0).add("jquery/jquery.ba-hashchange-1.3.js",0).add("jquery/jquery.debounce-1.0.5.js",0).add("menu-resizer.js",1).add("cross_framing_protection.js",0).add("rte.js",1).add("tracekit/tracekit.js",1).add("error_report.js",1).add("messages.php?lang=zh_CN&amp;db=&amp;token=30c54d554a60f501f6659633c5fe7728",0).add("get_image.js.php?theme=pmahomme",0).add("config.js",1).add("doclinks.js",1).add("functions.js",1).add("navigation.js",1).add("indexes.js",1).add("common.js",1).add("page_settings.js",1).add("codemirror/lib/codemirror.js",0).add("codemirror/mode/sql/sql.js",0).add("codemirror/addon/runmode/runmode.js",0).add("codemirror/addon/hint/show-hint.js",0).add("codemirror/addon/hint/sql-hint.js",0).add("codemirror/addon/lint/lint.js",0).add("codemirror/addon/lint/sql-lint.js",0).add("console.js",1);
-$(function() {AJAX.fireOnload("whitelist.php?lang=zh_CN&amp;db=&amp;token=30c54d554a60f501f6659633c5fe7728");AJAX.fireOnload("sprintf.js");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("menu-resizer.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("tracekit/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("config.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("navigation.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("page_settings.js");AJAX.fireOnload("console.js");});
-// ]]></script><noscript><style>html{display:block}</style></noscript></head><body><div id="pma_navigation"><div id="pma_navigation_resizer"></div><div id="pma_navigation_collapser"></div><div id="pma_navigation_content"><div id="pma_navigation_header"><a class="hide navigation_url" href="navigation.php?ajax_request=1&amp;token=30c54d554a60f501f6659633c5fe7728"></a><!-- LOGO START -->
-<div id="pmalogo">
-            <a href="index.php?token=30c54d554a60f501f6659633c5fe7728">
-        <img src="./themes/pmahomme/img/logo_left.png" alt="phpMyAdmin" id="imgpmalogo" />            </a>
-    </div>
-<!-- LOGO END --><!-- LINKS START --><div id="navipanellinks"><a href="index.php?token=30c54d554a60f501f6659633c5fe7728" title="主页"><img src="themes/dot.gif" title="主页" alt="主页" class="icon ic_b_home" /></a><a href="logout.php?token=30c54d554a60f501f6659633c5fe7728" class="disableAjax" title="退出"><img src="themes/dot.gif" title="退出" alt="退出" class="icon ic_s_loggoff" /></a><a href="./doc/html/index.html" target="documentation" title="phpMyAdmin 文档"><img src="themes/dot.gif" title="phpMyAdmin 文档" alt="phpMyAdmin 文档" class="icon ic_b_docs" /></a><a href="./url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.7%2Fen%2Findex.html" target="mysql_doc" title="文档"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_sqlhelp" /></a><a href="#" id="pma_navigation_settings_icon" title="导航面板设定"><img src="themes/dot.gif" title="导航面板设定" alt="导航面板设定" class="icon ic_s_cog" /></a><a href="#" id="pma_navigation_reload" title="重新载入导航面板"><img src="themes/dot.gif" title="重新载入导航面板" alt="重新载入导航面板" class="icon ic_s_reload" /></a></div><!-- LINKS ENDS --><img src="./themes/pmahomme/img/ajax_clock_small.gif" title="正在加载…" alt="正在加载…" style="visibility: hidden; display:none" class="throbber" /></div><div id="pma_navigation_tree" class="list_container synced highlight"><div class="pma_quick_warp"><div class="drop_list"><span title="最近使用的表" class="drop_button">近期访问</span><ul id="pma_recent_list"><li class="warp_link"><a href="tbl_recent_favorite.php?db=food&amp;table=product&amp;token=30c54d554a60f501f6659633c5fe7728">`food`.`product`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=food&amp;table=news&amp;token=30c54d554a60f501f6659633c5fe7728">`food`.`news`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=food&amp;table=message&amp;token=30c54d554a60f501f6659633c5fe7728">`food`.`message`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=food&amp;table=baker&amp;token=30c54d554a60f501f6659633c5fe7728">`food`.`baker`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=food&amp;table=article&amp;token=30c54d554a60f501f6659633c5fe7728">`food`.`article`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=food&amp;table=user&amp;token=30c54d554a60f501f6659633c5fe7728">`food`.`user`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=food&amp;table=webinfo&amp;token=30c54d554a60f501f6659633c5fe7728">`food`.`webinfo`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=food&amp;table=position&amp;token=30c54d554a60f501f6659633c5fe7728">`food`.`position`</a></li><li class="warp_link"><a href="tbl_recent_favorite.php?db=food&amp;table=category&amp;token=30c54d554a60f501f6659633c5fe7728">`food`.`category`</a></li></ul></div><div class="drop_list"><span title="表收藏夹" class="drop_button">表收藏夹</span><ul id="pma_favorite_list"><li class="warp_link">表收藏夹为空。</li></ul></div><div class="clearfloat"></div></div><div class="clearfloat"></div><ul><!-- CONTROLS START --><li id="navigation_controls_outer"><div id="navigation_controls"><a href="#" id="pma_navigation_collapse" title="全部折叠"><img src="./themes/pmahomme/img/s_collapseall.png" title="全部折叠" alt="全部折叠" /></a><a href="#" id="pma_navigation_sync" title="从主面板取消链接"><img src="themes/dot.gif" title="从主面板取消链接" alt="从主面板取消链接" class="icon ic_s_link" /></a></div></li><!-- CONTROLS ENDS --></ul><div id='pma_navigation_tree_content'><ul><li class="first new_database italics"><div class='block'><i class='first'></i></div><div class='block '><a href='server_databases.php?server=1&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="" alt="" class="icon ic_b_newdb" /></a></div><a class='hover_show_full' href='server_databases.php?server=1&amp;token=30c54d554a60f501f6659633c5fe7728' title=''>新建</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.Zm9vZA==</span><span class='hide vPath'>cm9vdA==.Zm9vZA==</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=food&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="数据库操作" alt="数据库操作" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=food&amp;token=30c54d554a60f501f6659633c5fe7728' title='结构'>food</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class='hide vPath'>cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=information_schema&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="数据库操作" alt="数据库操作" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=information_schema&amp;token=30c54d554a60f501f6659633c5fe7728' title='结构'>information_schema</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.bXlzcWw=</span><span class='hide vPath'>cm9vdA==.bXlzcWw=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=mysql&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="数据库操作" alt="数据库操作" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=mysql&amp;token=30c54d554a60f501f6659633c5fe7728' title='结构'>mysql</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class='hide vPath'>cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=performance_schema&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="数据库操作" alt="数据库操作" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=performance_schema&amp;token=30c54d554a60f501f6659633c5fe7728' title='结构'>performance_schema</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.c3lz</span><span class='hide vPath'>cm9vdA==.c3lz</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=sys&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="数据库操作" alt="数据库操作" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=sys&amp;token=30c54d554a60f501f6659633c5fe7728' title='结构'>sys</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.d2FpbWFp</span><span class='hide vPath'>cm9vdA==.d2FpbWFp</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=waimai&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="数据库操作" alt="数据库操作" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=waimai&amp;token=30c54d554a60f501f6659633c5fe7728' title='结构'>waimai</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.d2ViMTcxMQ==</span><span class='hide vPath'>cm9vdA==.d2ViMTcxMQ==</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=web1711&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="数据库操作" alt="数据库操作" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=web1711&amp;token=30c54d554a60f501f6659633c5fe7728' title='结构'>web1711</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.d2VpYm8=</span><span class='hide vPath'>cm9vdA==.d2VpYm8=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=weibo&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="数据库操作" alt="数据库操作" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=weibo&amp;token=30c54d554a60f501f6659633c5fe7728' title='结构'>weibo</a><div class="clearfloat"></div></li><li class="last database"><div class='block'><i></i><a class="expander" href='#'><span class='hide aPath'>cm9vdA==.d3VpMTcxMQ==</span><span class='hide vPath'>cm9vdA==.d3VpMTcxMQ==</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" /></a></div><div class='block '><a href='db_operations.php?server=1&amp;db=wui1711&amp;token=30c54d554a60f501f6659633c5fe7728'><img src="themes/dot.gif" title="数据库操作" alt="数据库操作" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=wui1711&amp;token=30c54d554a60f501f6659633c5fe7728' title='结构'>wui1711</a><div class="clearfloat"></div></li></ul></div></div><div id="pma_navi_settings_container"><div id="pma_navigation_settings"><div class="page_settings"><form method="post" action="export.php?db=&amp;table=&amp;server=1&amp;target=&amp;token=30c54d554a60f501f6659633c5fe7728" class="config-form disableAjax"><input type="hidden" name="tab_hash" value="" /><input type="hidden" name="check_page_refresh"  id="check_page_refresh" value="" />
-<input type="hidden" name="token" value="30c54d554a60f501f6659633c5fe7728" />
-<input type="hidden" name="submit_save" value="Navi_panel" /><ul class="tabs"    >
+-- phpMyAdmin SQL Dump
+-- version phpStudy 2014
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 生成日期: 2018 �?04 �?18 �?11:38
+-- 服务器版本: 5.5.47
+-- PHP 版本: 5.5.30
 
-                                    <li     >
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
-            <a href="#Navi_panel"                                        >
-            导航面板            </a>
-        </li>
-                                <li     >
 
-            <a href="#Navi_tree"                                        >
-            导航树            </a>
-        </li>
-                                <li     >
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
 
-            <a href="#Navi_databases"                                        >
-            数据库            </a>
-        </li>
-                                <li     >
+--
+-- 数据库: `food`
+--
 
-            <a href="#Navi_tables"                                        >
-            表            </a>
-        </li>
-            </ul><br clear="right" /><div class="tabs_contents"><fieldset class="optbox" id="Navi_panel"><legend>导航面板</legend><p>自定义导航面板。</p><table width="100%" cellspacing="0"><tr><th><label for="ShowDatabasesNavigationAsTree">以树状显示数据库导航面板</label><span class="doc"><a href="./doc/html/config.html#cfg_ShowDatabasesNavigationAsTree" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>导航栏使用数据库选择器替代树形列表</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDatabasesNavigationAsTree" id="ShowDatabasesNavigationAsTree" checked="checked" /></span><a class="restore-default" href="#ShowDatabasesNavigationAsTree" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationLinkWithMainPanel">与主面板链接</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationLinkWithMainPanel" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>高亮当前数据库或表链接到主面板。</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationLinkWithMainPanel" id="NavigationLinkWithMainPanel" checked="checked" /></span><a class="restore-default" href="#NavigationLinkWithMainPanel" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationDisplayLogo">显示徽标</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationDisplayLogo" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>在导航面板中显示图示。</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationDisplayLogo" id="NavigationDisplayLogo" checked="checked" /></span><a class="restore-default" href="#NavigationDisplayLogo" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationLogoLink">徽标链接地址</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationLogoLink" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>导航面板中图示指向的链接地址。</small></th><td><input type="text" size="40" name="NavigationLogoLink" id="NavigationLogoLink" value="index.php" /><a class="restore-default" href="#NavigationLogoLink" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationLogoLinkWindow">徽标链接目标</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationLogoLinkWindow" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>在主窗口（<kbd>main</kbd>）或新窗口（<kbd>new</kbd>）打开目标页面。</small></th><td><select name="NavigationLogoLinkWindow" id="NavigationLogoLinkWindow"><option value="main" selected="selected">main</option><option value="new">new</option></select><a class="restore-default" href="#NavigationLogoLinkWindow" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreePointerEnable">启用高亮</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreePointerEnable" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>高亮鼠标指针所在位置的服务器。</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreePointerEnable" id="NavigationTreePointerEnable" checked="checked" /></span><a class="restore-default" href="#NavigationTreePointerEnable" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="FirstLevelNavigationItems">第一层节点的最大项数</label><span class="doc"><a href="./doc/html/config.html#cfg_FirstLevelNavigationItems" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>每页导航树所能显示的第一层的最大项数。</small></th><td><input type="number" name="FirstLevelNavigationItems" id="FirstLevelNavigationItems" value="100" /><a class="restore-default" href="#FirstLevelNavigationItems" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeDisplayItemFilterMinimum">显示筛选框的最少项数</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeDisplayItemFilterMinimum" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>设置达到多少个项（表、视图、程序和事件）时将显示筛选框。</small></th><td><input type="number" name="NavigationTreeDisplayItemFilterMinimum" id="NavigationTreeDisplayItemFilterMinimum" value="30" /><a class="restore-default" href="#NavigationTreeDisplayItemFilterMinimum" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NumRecentTables">最近使用的表</label><span class="doc"><a href="./doc/html/config.html#cfg_NumRecentTables" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>最近使用的表的最大数量；设为 0 为禁用。</small></th><td><input type="number" name="NumRecentTables" id="NumRecentTables" value="10" /><a class="restore-default" href="#NumRecentTables" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NumFavoriteTables">表收藏夹</label><span class="doc"><a href="./doc/html/config.html#cfg_NumFavoriteTables" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>收藏表的最大数量；设为 0 为禁用。</small></th><td><input type="number" name="NumFavoriteTables" id="NumFavoriteTables" value="10" /><a class="restore-default" href="#NumFavoriteTables" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr></table></fieldset><fieldset class="optbox" id="Navi_tree"><legend>导航树</legend><p>自定义导航树。</p><table width="100%" cellspacing="0"><tr><th><label for="MaxNavigationItems">节点中最大项数</label><span class="doc"><a href="./doc/html/config.html#cfg_MaxNavigationItems" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>每页导航树所能显示的最大项数。</small></th><td><input type="number" name="MaxNavigationItems" id="MaxNavigationItems" value="50" /><a class="restore-default" href="#MaxNavigationItems" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeEnableGrouping">分组树中的项</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeEnableGrouping" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>将导航树中的项分组（根据上面 数据库与数据表 页面设置的分隔符分组）。</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeEnableGrouping" id="NavigationTreeEnableGrouping" checked="checked" /></span><a class="restore-default" href="#NavigationTreeEnableGrouping" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeEnableExpansion">启用表导航条展开功能</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeEnableExpansion" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>是否允许在导航栏中展开导航树。</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeEnableExpansion" id="NavigationTreeEnableExpansion" checked="checked" /></span><a class="restore-default" href="#NavigationTreeEnableExpansion" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeShowTables">在导航树显示表</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeShowTables" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>在导航树是否在数据库下显示数据表节点</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowTables" id="NavigationTreeShowTables" checked="checked" /></span><a class="restore-default" href="#NavigationTreeShowTables" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeShowViews">在导航树显示视图</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeShowViews" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>在导航树中是否在数据库下显示视图节点</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowViews" id="NavigationTreeShowViews" checked="checked" /></span><a class="restore-default" href="#NavigationTreeShowViews" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeShowFunctions">在导航树显示函数</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeShowFunctions" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>是否显示导航树中数据库下级功能</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowFunctions" id="NavigationTreeShowFunctions" checked="checked" /></span><a class="restore-default" href="#NavigationTreeShowFunctions" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeShowProcedures">在导航树显示进程</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeShowProcedures" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>是否在导航树中显示数据库进程</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowProcedures" id="NavigationTreeShowProcedures" checked="checked" /></span><a class="restore-default" href="#NavigationTreeShowProcedures" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeShowEvents">在导航树显示事件</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeShowEvents" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>在导航树中数据库下是否显示事件节点</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowEvents" id="NavigationTreeShowEvents" checked="checked" /></span><a class="restore-default" href="#NavigationTreeShowEvents" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr></table></fieldset><fieldset class="optbox" id="Navi_databases"><legend>数据库</legend><p>数据库显示选项。</p><table width="100%" cellspacing="0"><tr><th><label for="NavigationTreeDisplayDbFilterMinimum">设置达到多少个数据库时将显示数据库筛选框</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeDisplayDbFilterMinimum" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span></th><td><input type="number" name="NavigationTreeDisplayDbFilterMinimum" id="NavigationTreeDisplayDbFilterMinimum" value="30" /><a class="restore-default" href="#NavigationTreeDisplayDbFilterMinimum" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeDbSeparator">数据库树分隔符</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeDbSeparator" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>将数据库分为不同层级的字符串。</small></th><td><input type="text" size="25" name="NavigationTreeDbSeparator" id="NavigationTreeDbSeparator" value="_" /><a class="restore-default" href="#NavigationTreeDbSeparator" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr></table></fieldset><fieldset class="optbox" id="Navi_tables"><legend>表</legend><p>表显示选项。</p><table width="100%" cellspacing="0"><tr><th><label for="NavigationTreeDefaultTabTable">快速访问图标的目标</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeDefaultTabTable" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span></th><td><select name="NavigationTreeDefaultTabTable" id="NavigationTreeDefaultTabTable"><option value="structure" selected="selected">结构</option><option value="sql">SQL</option><option value="search">搜索</option><option value="insert">插入</option><option value="browse">浏览</option></select><a class="restore-default" href="#NavigationTreeDefaultTabTable" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeDefaultTabTable2">第二快速访问图标的目标页面</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeDefaultTabTable2" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span></th><td><select name="NavigationTreeDefaultTabTable2" id="NavigationTreeDefaultTabTable2"><option value="" selected="selected"></option><option value="structure">结构</option><option value="sql">SQL</option><option value="search">搜索</option><option value="insert">插入</option><option value="browse">浏览</option></select><a class="restore-default" href="#NavigationTreeDefaultTabTable2" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeTableSeparator">表树分隔符</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeTableSeparator" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span><small>将表分为不同层级的字符串。</small></th><td><input type="text" size="25" name="NavigationTreeTableSeparator" id="NavigationTreeTableSeparator" value="__" /><a class="restore-default" href="#NavigationTreeTableSeparator" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr><tr><th><label for="NavigationTreeTableLevel">表树最大深度</label><span class="doc"><a href="./doc/html/config.html#cfg_NavigationTreeTableLevel" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a>
-</span></th><td><input type="number" name="NavigationTreeTableLevel" id="NavigationTreeTableLevel" value="1" /><a class="restore-default" href="#NavigationTreeTableLevel" title="还原为默认值" style="display:none"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_reload" /></a></td></tr></table></fieldset></div>
-</form>
-<script type="text/javascript">
-if (typeof configInlineParams === "undefined" || !Array.isArray(configInlineParams)) configInlineParams = [];
-configInlineParams.push(function() {
-validateField('FirstLevelNavigationItems', 'PMA_validatePositiveNumber', true);
-validateField('NumRecentTables', 'PMA_validateNonNegativeNumber', true);
-validateField('NumFavoriteTables', 'PMA_validateNonNegativeNumber', true);
-validateField('MaxNavigationItems', 'PMA_validatePositiveNumber', true);
-validateField('NavigationTreeTableLevel', 'PMA_validatePositiveNumber', true);
-$.extend(PMA_messages, {
-	'error_nan_p': '请输入正数！',
-	'error_nan_nneg': '请输入非负数！',
-	'error_incorrect_port': '请输入有效的端口号！',
-	'error_invalid_value': '值错误！',
-	'error_value_lte': '值应小于或等于 %s！'});
-$.extend(defaultValues, {
-	'ShowDatabasesNavigationAsTree': true,
-	'NavigationLinkWithMainPanel': true,
-	'NavigationDisplayLogo': true,
-	'NavigationLogoLink': 'index.php',
-	'NavigationLogoLinkWindow': ['main'],
-	'NavigationTreePointerEnable': true,
-	'FirstLevelNavigationItems': '100',
-	'NavigationTreeDisplayItemFilterMinimum': '30',
-	'NumRecentTables': '10',
-	'NumFavoriteTables': '10',
-	'MaxNavigationItems': '50',
-	'NavigationTreeEnableGrouping': true,
-	'NavigationTreeEnableExpansion': true,
-	'NavigationTreeShowTables': true,
-	'NavigationTreeShowViews': true,
-	'NavigationTreeShowFunctions': true,
-	'NavigationTreeShowProcedures': true,
-	'NavigationTreeShowEvents': true,
-	'NavigationTreeDisplayDbFilterMinimum': '30',
-	'NavigationTreeDbSeparator': '_',
-	'NavigationTreeDefaultTabTable': ['structure'],
-	'NavigationTreeDefaultTabTable2': [''],
-	'NavigationTreeTableSeparator': '__',
-	'NavigationTreeTableLevel': '1'});
-});
-if (typeof configScriptLoaded !== "undefined" && configInlineParams) loadInlineConfig();
-</script></div></div></div></div><div class="pma_drop_handler">将文件拖动至此</div><div class="pma_sql_import_status"><h2>SQL upload ( <span class="pma_import_count">0</span> ) <span class="close">x</span><span class="minimize">-</span></h2><div></div></div></div><div id="prefs_autoload" class="notice print_ignore" style="display:none">
-    <form action="prefs_manage.php" method="post" class="disableAjax">
-        <input type="hidden" name="token" value="30c54d554a60f501f6659633c5fe7728" />        <input type="hidden" name="json" value="" />
-        <input type="hidden" name="submit_import" value="1" />
-        <input type="hidden" name="return_url" value="export.php?" />
-        你的浏览器中有当前域的 phpMyAdmin 设置。是否导入到当前会话中？        <br />
-        <a href="#yes">是</a>
-        / <a href="#no">否</a>
-    </form>
-</div><noscript><div class="error"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_error" /> 该处必须启用 Javascript！</div></noscript><div id='floating_menubar'></div><div id='serverinfo'><img src="themes/dot.gif" title="" alt="" class="icon ic_s_host item" /><a href="index.php?token=30c54d554a60f501f6659633c5fe7728" class="item">服务器: Local Databases</a><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><ul id="topmenu"  class="resizable-menu"><li     >
+-- --------------------------------------------------------
 
-            <a href="server_databases.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="数据库" alt="数据库" class="icon ic_s_db" />&nbsp;数据库            </a>
-        </li>
-<li     >
+--
+-- 表的结构 `article`
+--
 
-            <a href="server_sql.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql" />&nbsp;SQL            </a>
-        </li>
-<li     >
+CREATE TABLE IF NOT EXISTS `article` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `title` varchar(10) NOT NULL,
+  `thumb` varchar(100) NOT NULL,
+  `descrition` varchar(200) NOT NULL,
+  `uptime` varchar(30) NOT NULL DEFAULT '2018',
+  `xgtj` varchar(30) NOT NULL DEFAULT '100',
+  `pfdj` varchar(30) NOT NULL DEFAULT '8',
+  `content` varchar(5000) NOT NULL,
+  `look` int(100) NOT NULL DEFAULT '0',
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk AUTO_INCREMENT=1 ;
 
-            <a href="server_status.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="状态" alt="状态" class="icon ic_s_status" />&nbsp;状态            </a>
-        </li>
-<li     >
+-- --------------------------------------------------------
 
-            <a href="server_privileges.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728&amp;viewing_mode=server"                                 class="tab"        >
-            <img src="themes/dot.gif" title="账户" alt="账户" class="icon ic_s_rights" />&nbsp;账户            </a>
-        </li>
-<li     >
+--
+-- 表的结构 `baker`
+--
 
-            <a href="server_export.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="导出" alt="导出" class="icon ic_b_export" />&nbsp;导出            </a>
-        </li>
-<li     >
+CREATE TABLE IF NOT EXISTS `baker` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `thumb` varchar(100) NOT NULL,
+  `descrition` varchar(1000) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk AUTO_INCREMENT=1 ;
 
-            <a href="server_import.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="导入" alt="导入" class="icon ic_b_import" />&nbsp;导入            </a>
-        </li>
-<li     >
+-- --------------------------------------------------------
 
-            <a href="prefs_manage.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="设置" alt="设置" class="icon ic_b_tblops" />&nbsp;设置            </a>
-        </li>
-<li     >
+--
+-- 表的结构 `category`
+--
 
-            <a href="server_replication.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="复制" alt="复制" class="icon ic_s_replication" />&nbsp;复制            </a>
-        </li>
-<li     >
+CREATE TABLE IF NOT EXISTS `category` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` char(100) NOT NULL,
+  `thumb` varchar(200) NOT NULL,
+  `enname` varchar(200) NOT NULL,
+  `cid` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=6 ;
 
-            <a href="server_variables.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="变量" alt="变量" class="icon ic_s_vars" />&nbsp;变量            </a>
-        </li>
-<li     >
+--
+-- 转存表中的数据 `category`
+--
 
-            <a href="server_collations.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="字符集" alt="字符集" class="icon ic_s_asci" />&nbsp;字符集            </a>
-        </li>
-<li     >
+INSERT INTO `category` (`id`, `name`, `thumb`, `enname`, `cid`) VALUES
+(1, '艾美挚美', '/mvcweb/upload/logo-bg.jpg', 'AMY BEAUTY', 0),
+(2, '面点师', '/mvcweb/upload/logo-bg.jpg', 'THE BAKER', 0),
+(3, '面点推荐', '/mvcweb/upload/logo-bg.jpg', 'RECOMMENDATION', 0),
+(4, '新闻中心', '/mvcweb/upload/logo-bg.jpg', 'NEWS CENTER', 0),
+(5, '关于我们', '/mvcweb/upload/logo-bg.jpg', 'ABOUT US', 0);
 
-            <a href="server_engines.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="themes/dot.gif" title="引擎" alt="引擎" class="icon ic_b_engine" />&nbsp;引擎            </a>
-        </li>
-<li     >
+-- --------------------------------------------------------
 
-            <a href="server_plugins.php?db=&amp;token=30c54d554a60f501f6659633c5fe7728"                                 class="tab"        >
-            <img src="./themes/pmahomme/img/b_plugin.png" title="插件" alt="插件" />&nbsp;插件            </a>
-        </li>
-<div class="clearfloat"></div></ul>
-</div>
-<span id="page_nav_icons"><span id="lock_page_icon"></span><span id="page_settings_icon"><img src="themes/dot.gif" title="页面相关设置" alt="页面相关设置" class="icon ic_s_cog" /></span><a id="goto_pagetop" href="#"><img src="themes/dot.gif" title="点击以滚动到页面顶部" alt="点击以滚动到页面顶部" class="icon ic_s_top" /></a></span><div id="pma_console_container"><div id="pma_console"><div class="toolbar collapsed"><div class="switch_button console_switch"><img src="themes/dot.gif" title="SQL 查询控制台" alt="SQL 查询控制台" class="icon ic_console" /><span>控制台</span></div><div class="button clear"><span>清除</span></div><div class="button history"><span>历史</span></div><div class="button options"><span>选项</span></div><div class="button debug hide"><span>调试 SQL</span></div></div><div class="content"><div class="console_message_container"><div class="message welcome"><span><span id="instructions-0">按 Ctrl+Enter 键执行查询</span><span class="hide" id="instructions-1">按 Enter 执行查询</span></span></div></div><div class="query_input"><span class="console_query_input"></span></div></div><div class="mid_layer"></div><div class="card" id="debug_console"><div class="toolbar"><div class="button order order_asc"><span>递增排序</span></div><div class="button order order_desc"><span>递减排序</span></div><div class="text"><span>命令：</span></div><div class="switch_button"><span>调试 SQL</span></div><div class="button order_by sort_count"><span>数量</span></div><div class="button order_by sort_exec"><span>运行顺序</span></div><div class="button order_by sort_time"><span>用时</span></div><div class="text"><span>排序条件：</span></div><div class="button group_queries"><span>联合查询</span></div><div class="button ungroup_queries"><span>不使用联合查询</span></div></div><div class="content debug"><div class="message welcome"></div><div class="debugLog"></div></div><div class="templates"><div class="debug_query action_content"><span class="action collapse">崩溃</span> <span class="action expand">扩展</span> <span class="action dbg_show_trace">显示跟踪</span> <span class="action dbg_hide_trace">隐藏跟踪</span> <span class="text count hide">记录数： <span></span></span><span class="text time">用时： <span></span></span></div></div></div><div class="card" id="pma_console_options"><div class="toolbar"><div class="switch_button"><span>选项</span></div><div class="button default"><span>恢复默认</span></div></div><div class="content"><label><input type="checkbox" name="always_expand">总是扩展查询消息</label><br><label><input type="checkbox" name="start_history">在开始时显示查询历史</label><br><label><input type="checkbox" name="current_query">显示当前浏览查询</label><br><label><input type="checkbox" name="enter_executes">浏览设置，使按Shift+Enter键执行输入和插入新行作为永久设置。</label><br><label><input type="checkbox" name="dark_theme">切换到黑色主题</label><br></div></div><div class="templates"><div class="query_actions"><span class="action collapse">崩溃</span> <span class="action expand">扩展</span> <span class="action requery">重新查询</span> <span class="action edit">编辑</span> <span class="action explain">解析</span> <span class="action profiling">性能分析</span> <span class="text failed">查询失败</span> <span class="text targetdb">数据库: <span></span></span> <span class="text query_time">查询时间: <span></span></span> </div></div></div></div><div id="page_content"><!DOCTYPE HTML>
-<html lang="zh_CN" dir="ltr">
-<head>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>phpMyAdmin</title>
-    <meta charset="utf-8" />
-    <style type="text/css">
-    <!--
-    html {
-        padding: 0;
-        margin: 0;
-    }
-    body  {
-        font-family: sans-serif;
-        font-size: small;
-        color: #000000;
-        background-color: #F5F5F5;
-        margin: 1em;
-    }
-    h1 {
-        margin: 0;
-        padding: 0.3em;
-        font-size: 1.4em;
-        font-weight: bold;
-        color: #ffffff;
-        background-color: #ff0000;
-    }
-    p {
-        margin: 0;
-        padding: 0.5em;
-        border: 0.1em solid red;
-        background-color: #ffeeee;
-    }
-    //-->
-    </style>
-</head>
-<body>
-<h1>phpMyAdmin - 错误</h1>
-<p>export.php: 缺少参数： what<a href="./doc/html/faq.html#faqmissingparameters" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a><br />export.php: 缺少参数： export_type<a href="./doc/html/faq.html#faqmissingparameters" target="documentation"><img src="themes/dot.gif" title="文档" alt="文档" class="icon ic_b_help" /></a><br /></p>
-</body>
-</html>
-</div><div id="selflink" class="print_ignore"><a href="export.php?db=&amp;table=&amp;server=1&amp;target=&amp;token=30c54d554a60f501f6659633c5fe7728" title="打开新的 phpMyAdmin 窗口" target="_blank"><img src="themes/dot.gif" title="打开新的 phpMyAdmin 窗口" alt="打开新的 phpMyAdmin 窗口" class="icon ic_window-new" /></a></div><div class="clearfloat" id="pma_errors"></div><script data-cfasync="false" type="text/javascript">// <![CDATA[
-var debugSQLInfo = 'null';
-AJAX.scriptHandler;
-$(function() {});
-// ]]></script></body></html>
+--
+-- 表的结构 `message`
+--
+
+CREATE TABLE IF NOT EXISTS `message` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `thumb` varchar(100) NOT NULL,
+  `mess` varchar(255) NOT NULL,
+  `nid` int(10) NOT NULL,
+  `aid` int(10) NOT NULL,
+  `cid` int(10) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `news`
+--
+
+CREATE TABLE IF NOT EXISTS `news` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `descrition` varchar(300) NOT NULL,
+  `thumb` varchar(200) NOT NULL,
+  `content` varchar(5000) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `look` int(100) NOT NULL DEFAULT '0',
+  `like` int(100) NOT NULL DEFAULT '0',
+  `recommend` int(100) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `product`
+--
+
+CREATE TABLE IF NOT EXISTS `product` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `descrition` varchar(200) NOT NULL,
+  `thumb` varchar(500) NOT NULL,
+  `xgtj` varchar(100) NOT NULL,
+  `uptime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `pfdj` int(10) NOT NULL,
+  `recommend` varchar(100) NOT NULL DEFAULT '0',
+  `like` varchar(100) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `user` char(20) NOT NULL,
+  `pass` char(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `telephone` bigint(20) NOT NULL,
+  `birthday` date NOT NULL,
+  `home` varchar(255) NOT NULL,
+  `nickname` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `intro` varchar(2000) NOT NULL,
+  `appiaise` varchar(1000) NOT NULL,
+  `expirence` varchar(3000) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user` (`user`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `user`
+--
+
+INSERT INTO `user` (`id`, `user`, `pass`, `name`, `telephone`, `birthday`, `home`, `nickname`, `img`, `intro`, `appiaise`, `expirence`) VALUES
+(1, 'zhangdada', 'e10adc3949ba59abbe56e057f20f883e', '鲁迅', 18434367522, '1881-09-25', '浙江省绍兴府会稽县', '周树人', 'upload/2018-03-231521776766.jpg', '鲁迅（1881－1936），文学家，思想家,，革命家。原名周樟寿，后改名周树人。字豫亭，后改为豫才。浙江绍兴人，出身于破落封建家庭，青年时代受进化论、尼采超人哲学和托尔斯泰博爱思想的影响。鲁迅原在仙台医学院学医，后从事文艺工作，希望用以改变国民精神。辛亥革命后，曾任南京临时政府和北京政府教育部部员、佥事等职，兼在北京大学、女子师范大学等校授课。', '鲁迅一生的著作包括杂文、短篇小说、论文、散文、翻译近1000万字，其中杂文集共16本有：《热风》；《坟》；《华盖集》；《华盖集续编》（1926）；《而已集》（1927）；《三闲集》，《二心集》（1930）；《南腔北调集》（1932——1933）；《伪自由书》；《准风月谈》；《花边文学》；《且介亭杂文》（1934——1936）等。散文集《朝花夕拾》，散文诗集《野草》，讽刺了当时社会的黑暗面。', '                          辛亥革命前夜，鲁迅回到祖国，先在杭州的浙江两级师范学堂执教，担任化学、生理学教员，后又回到故乡绍兴，担任绍兴府中学堂监学兼博物教员、山会初级师范学堂监督（校长）。他一方面教书育人，培养青年， 一方面积极投身于辛亥革命。 他领导故乡文学团体“越社”， 支持创办《越铎日报》。 1912年初， 鲁迅应教育总长蔡元培之邀，赴南京临时政府教育部任职，不久，随教育部迁至北京，任社会教育司第一科科长，同时先后受聘于北京大学、北京高等师范学校、北京女子高等师范学校等一些高等院校，担任校外兼职讲师。');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `webinfo`
+--
+
+CREATE TABLE IF NOT EXISTS `webinfo` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `webname` char(100) NOT NULL,
+  `webaddress` char(100) NOT NULL,
+  `webtelephone` char(100) NOT NULL,
+  `webemail` varchar(100) NOT NULL,
+  `webpublic` varchar(100) NOT NULL,
+  `uploadtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `website` char(100) NOT NULL,
+  `copyright` char(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `webinfo`
+--
+
+INSERT INTO `webinfo` (`id`, `webname`, `webaddress`, `webtelephone`, `webemail`, `webpublic`, `uploadtime`, `website`, `copyright`) VALUES
+(1, 'aimei', '广东省深圳市深圳市中心部', '305-5050661', 'AIMEI@163.com', 'AIMEIMIANBAOFANG', '2018-04-17 01:43:21', 'AIMEI.duapp.com', '北京市公安局朝阳分局备案编号:110105000501   Copyright &copy; 2006-2016 ZCOOL');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
