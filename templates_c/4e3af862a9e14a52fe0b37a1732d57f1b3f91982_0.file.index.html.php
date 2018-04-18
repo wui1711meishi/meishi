@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 05:33:51
-  from "D:\wamp\www\meishi\templates\index\index.html" */
+/* Smarty version 3.1.30, created on 2018-04-18 15:13:07
+  from "E:\phpstudy\WWW\meishi\templates\index\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6bc9f868a00_68167787',
+  'unifunc' => 'content_5ad6f003708de9_44681998',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '70296f2243accb0779e886bb4d48878fa062a1cb' => 
+    '4e3af862a9e14a52fe0b37a1732d57f1b3f91982' => 
     array (
-      0 => 'D:\\wamp\\www\\meishi\\templates\\index\\index.html',
-      1 => 1524022429,
+      0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\index.html',
+      1 => 1524035585,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6bc9f868a00_68167787 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad6f003708de9_44681998 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,6 +29,10 @@ function content_5ad6bc9f868a00_68167787 (Smarty_Internal_Template $_smarty_tpl)
 	<title>Document</title>
 	<link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
 index.css">
+	<link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
+twlb.css">
+	<!--<link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
+xwlb.css">-->
 	<?php echo '<script'; ?>
  src="<?php echo INDEX_JS_PATH;?>
 index.js"><?php echo '</script'; ?>
@@ -40,72 +44,74 @@ jquery-3.3.1.min.js"><?php echo '</script'; ?>
 </head>
 <body>
 <!--头部搜索-->
-	<div class="search">
-		<form action="" class="search_f">
-			<input type="text" placeholder="快来搜搜~">
-			<div class="search_right">
-				<a href="">
-					<i class="iconfont">&#xe612;</i>
-				</a>
-			</div>
-			<div class="search_h1"></div>
-			<div class="search_h2"></div>
-			<div class="search_s"></div>
-		</form>
-	</div>
+<div class="search">
+	<form action="" class="search_f">
+		<input type="text" placeholder="快来搜搜~">
+		<div class="search_right">
+			<a href="">
+				<i class="iconfont">&#xe612;</i>
+			</a>
+		</div>
+		<div class="search_h1"></div>
+		<div class="search_h2"></div>
+		<div class="search_s"></div>
+	</form>
+</div>
 <!--头部-->
-	<header>
-        <div class="tw_nav">
-            <a href="" class="logo_k">
-                <img src="<?php echo INDEX_IMG_PATH;?>
+<div class="tw_header" style="padding-top: 0">
+	<div class="tw_nav">
+		<a href="" class="logo_k">
+			<img src="<?php echo INDEX_IMG_PATH;?>
 logo.png" alt="">
-            </a>
-            <ul class="nav_list">
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>THE</b>PORJECT</p>
-                        <p class="nav_name">首页</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="twlb.html">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>Amy</b>BEAUTY</p>
-                        <p class="nav_name">艾美挚美</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>THE</b>Baker</p>
-                        <p class="nav_name">面点师</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>REC</b>OMMENDATION</p>
-                        <p class="nav_name">面点推荐</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>REC</b>OMMENDATION</p>
-                        <p class="nav_name">新闻中心</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>ABO</b>UT US</p>
-                        <p class="nav_name">关于我们</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-	</header>
+		</a>
+		<ul class="nav_list">
+			<li class="active">
+				<a href="index.php?m=index&a=main">
+					<div class="nav_line"></div>
+					<p class="nav_ename"><b>THE</b>PORJECT</p>
+					<p class="nav_name">首页</p>
+				</a>
+			</li>
+			<li>
+				<a href="index.php?m=index&a=aimei">
+					<div class="nav_line"></div>
+					<p class="nav_ename"><b>Amy</b>BEAUTY</p>
+					<p class="nav_name">艾美挚美</p>
+				</a>
+			</li>
+			<li>
+				<a href="index.php?m=index&a=baker">
+					<div class="nav_line"></div>
+					<p class="nav_ename"><b>THE</b>Baker</p>
+					<p class="nav_name">面点师</p>
+				</a>
+			</li>
+			<li>
+				<a href="index.php?m=index&a=product">
+					<div class="nav_line"></div>
+					<p class="nav_ename"><b>REC</b>OMMENDATION</p>
+					<p class="nav_name">面点推荐</p>
+				</a>
+			</li>
+			<li>
+				<a href="index.php?m=index&a=news">
+					<div class="nav_line"></div>
+					<p class="nav_ename"><b>REC</b>OMMENDATION</p>
+					<p class="nav_name">新闻中心</p>
+				</a>
+			</li>
+			<li>
+				<a href="index.php?m=index&a=about">
+					<div class="nav_line"></div>
+					<p class="nav_ename"><b>ABO</b>UT US</p>
+					<p class="nav_name">关于我们</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
 <!--西点烘焙-->
 	<section class="westbake">
 		<div class="westbake_left">
@@ -413,63 +419,63 @@ wqdvdvssc_03.png" alt="">
 		</div>
 		<div class="news_more"><a href="">MORE</a></div>
 	</div>
-    <div class="footer">
-        <div class="foot_pic">
-            <img src="<?php echo INDEX_IMG_PATH;?>
+<div class="footer">
+	<div class="foot_pic">
+		<img src="<?php echo INDEX_IMG_PATH;?>
 gwgw_02.png">
-        </div>
-        <div class="contact">
-            <div class="us">
-                <p class="conus">Contact us</p>
-                <p class="tel">0351-5050661</p>
-                <p class="address">山西省太原市迎泽区</p>
-            </div>
-            <div class="search1">
-                <input type="text">
-                <i class="sea iconfont">&#xe622;</i>
-            </div>
-        </div>
-        <div class="way">
-            <div class="contact_way">
-                <div class="four">
-                    <p class="Four">45°</p>
-                    <p class="way_lianxi">联系方式</p>
-                    <p class="way_ename">Contact information</p>
-                </div>
-                <ul class="wxwbem">
-                    <li>
-                        <i class="iconfont">&#xe63e;</i>
-                    </li>
-                    <li>
-                        <i class="iconfont">&#xe641;</i>
-                    </li>
-                    <li>
-                        <i class="iconfont">&#xe729;</i>
-                    </li>
-                </ul>
-            </div>
-            <ul class="public">
-                <li class="five">
-                    <p class="Four">01</p>
-                    <p class="way_lianxi">公众号&nbsp;&nbsp;<em>AIMEIMIANBAOFANG</em></p>
-                    <p class="way_ename">Public number</p>
-                </li>
-                <li class="five">
-                    <p class="Four">02</p>
-                    <p class="way_lianxi">邮箱&nbsp;&nbsp;<em>AIMEI@163.com</em></p>
-                    <p class="way_ename">Mailbox number</p>
-                </li>
-                <li class="five">
-                    <p class="Four">03</p>
-                    <p class="way_lianxi">电话&nbsp;&nbsp;<em>0350-5050662</em></p>
-                    <p class="way_ename">Telephone</p>
-                </li>
-            </ul>
-        </div>
-        <div class="bottom">
-            北京市公安局朝阳分局备案编号:110105000501&nbsp;&nbsp;&nbsp;&nbsp;Copyright&nbsp;©&nbsp;2006-2016&nbsp;ZCOOL
-        </div>
-    </div>
+	</div>
+	<div class="contact">
+		<div class="us">
+			<p class="conus">Contact us</p>
+			<p class="tel">0351-5050661</p>
+			<p class="address">山西省太原市迎泽区</p>
+		</div>
+		<div class="search1">
+			<input type="text">
+			<i class="sea">&#xe622;</i>
+		</div>
+	</div>
+	<div class="way">
+		<div class="contact_way">
+			<div class="four">
+				<p class="Four">45°</p>
+				<p class="way_lianxi">联系方式</p>
+				<p class="way_ename">Contact information</p>
+			</div>
+			<ul class="wxwbem">
+				<li>
+					<i>&#xe63e;</i>
+				</li>
+				<li>
+					<i>&#xe641;</i>
+				</li>
+				<li>
+					<i>&#xe729;</i>
+				</li>
+			</ul>
+		</div>
+		<ul class="public">
+			<li class="five">
+				<p class="Four">01</p>
+				<p class="way_lianxi">公众号&nbsp;&nbsp;<em>AIMEIMIANBAOFANG</em></p>
+				<p class="way_ename">Public number</p>
+			</li>
+			<li class="five">
+				<p class="Four">02</p>
+				<p class="way_lianxi">邮箱&nbsp;&nbsp;<em>AIMEI@163.com</em></p>
+				<p class="way_ename">Mailbox number</p>
+			</li>
+			<li class="five">
+				<p class="Four">03</p>
+				<p class="way_lianxi">电话&nbsp;&nbsp;<em>0350-5050662</em></p>
+				<p class="way_ename">Telephone</p>
+			</li>
+		</ul>
+	</div>
+	<div class="bottom">
+		北京市公安局朝阳分局备案编号:110105000501&nbsp;&nbsp;&nbsp;&nbsp;Copyright&nbsp;©&nbsp;2006-2016&nbsp;ZCOOL
+	</div>
+</div>
 </body>
 </html><?php }
 }

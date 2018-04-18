@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 07:08:47
-  from "C:\wamp64\www\meishi\templates\admin\category.html" */
+/* Smarty version 3.1.30, created on 2018-04-18 12:56:51
+  from "E:\phpstudy\WWW\meishi\templates\admin\message.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6eeff570318_86966635',
+  'unifunc' => 'content_5ad6d0135a5a42_52953767',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '032c3fe3793efb8c047e032ae8a0faf860e7a40d' => 
+    '95b2887a605c04be448220eb4a667e428ef3af60' => 
     array (
-      0 => 'C:\\wamp64\\www\\meishi\\templates\\admin\\category.html',
-      1 => 1524034326,
+      0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\admin\\message.html',
+      1 => 1524019217,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6eeff570318_86966635 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad6d0135a5a42_52953767 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,26 +39,34 @@ custom.css" rel="stylesheet" />
 <body>
 <div class="row">
     <div class="col-md-12">
-        <h1 class="page-head-line">分类管理</h1>
+        <h1 class="page-head-line">留言管理</h1>
     </div>
 </div>
-<a href="index.php?m=admin&f=menu&a=addcategory"><button class="btn btn-success">添加</button></a>
+<!--<a href="index.php?m=admin&f=content&a=addcontent"><button class="btn btn-success">添加</button></a>-->
 <div class="panel-body">
     <div class="table-responsive">
         <table class="table" align="center">
             <thead>
             <tr align="center">
                 <th>ID</th>
-                <th>中文名字</th>
-                <th>英文名字</th>
-                <th>父目录</th>
-                <th>操作</th>
+                <th>名字</th>
+                <th>头像</th>
+                <th>留言内容</th>
+                <th>时间</th>
+                <th>对应aid</th>
+                <th>对应nid</th>
+                <th>对应cid</th>
+                <td>操作</td>
             </tr>
             </thead>
             <tbody>
             <?php echo $_smarty_tpl->tpl_vars['str']->value;?>
 
             </tbody>
+            <tr>
+                <td align="center" colspan="7"><?php echo $_smarty_tpl->tpl_vars['pagestr']->value;?>
+</td>
+            </tr>
         </table>
     </div>
 </div>

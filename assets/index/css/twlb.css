@@ -68,11 +68,11 @@ body{
 	padding: 0 16px;
 	font-weight: 700;
 }
-.nav_list li:nth-child(2){
+.nav_list li.active{
 	background: #f85739;
-    box-shadow: 0 5px 15px 3px rgba(252,149,34,0.8);
+	box-shadow: 0 5px 15px 3px rgba(252,149,34,0.8);
 }
-.nav_list li:nth-child(2) a{
+.nav_list li.active a{
 	color: #ffffff;
 }
 .nav_list li:last-child{
@@ -674,4 +674,16 @@ botton{
     text-align: center;
     line-height: 25px;
     font-size: 10px;
+}
+
+
+
+
+
+
+
+
+/*景冰川*/
+.fenye{
+	padding-bottom: 20px;
 }

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: lenovo
@@ -29,7 +28,6 @@ class index extends adminPar
         $str = "<ol class='breadcrumb'>" . $str;
         return $str;
     }
-
     //获取一级目录
     function getNav($i = 0)
     {
@@ -43,28 +41,44 @@ class index extends adminPar
         $this->smarty->assign('img', $img);
         $this->smarty->assign('arr', $arr);
     }
-    //获取指定目录的内容
-    function getCon($i, $con)
-    {
-        $db = new db();
-        $db->table = 'content';
-        $content = $db->selAll('*', "cid='$i'");
-        if (!$content) {
-            $this->jump('数据有误！', 'index.php?m=index');
-        }
-        $this->smarty->assign($con, $content);
-    }
-
     //初始化
     function init()
     {
         $this->smarty->display('index/index.html');
     }
 
-    //主页
-    function main()
-    {
+    //首页
+    function main(){
         $this->smarty->display('index/index.html');
+    }
+    //艾美挚美
+    function aimei(){
+        $this->smarty->display('index/aimei.html');
+    }
+    //面点师
+    function baker(){
+        $this->smarty->display('index/baker.html');
+    }
+    //面点推荐
+    function product(){
+        $this->smarty->display('index/product.html');
+    }
+    //新闻中心
+    function news(){
+        $this->smarty->display('index/news.html');
+    }
+    //关于我们
+    function about(){
+        $this->smarty->display('index/about.html');
+    }
 
+
+    //文章详情
+    function article(){
+        $this->smarty->display('index/article.html');
+    }
+    //新闻详情
+    function newsxq(){
+        $this->smarty->display('index/newsxq.html');
     }
 }

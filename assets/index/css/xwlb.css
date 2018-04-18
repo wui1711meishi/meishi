@@ -64,12 +64,15 @@ body{
     font-weight: 700;
 }
 .nav_list li a p{
-    color: #ffffff;
+    color: #fff;
 }
-.nav_list li:nth-child(5){
+.nav_list li.active{
     background: #fad113;
     box-shadow: 0 5px 15px 3px rgba(241,89,39,0.8);
 }
+/*.nav_list li.active a{*/
+    /*color: #fff;*/
+/*}*/
 .nav_list li:last-child{
     margin-right: 0;
 }

@@ -128,11 +128,11 @@ header{
 	padding: 0 16px;
 	font-weight: 700;
 }
-.nav_list li:nth-child(1){
+.nav_list li.active{
 	background: #f85739;
 	box-shadow: 0 5px 15px 3px rgba(252,149,34,0.8);
 }
-.nav_list li:nth-child(1) a{
+.nav_list li.active a{
 	color: #ffffff;
 }
 .nav_list li:last-child{

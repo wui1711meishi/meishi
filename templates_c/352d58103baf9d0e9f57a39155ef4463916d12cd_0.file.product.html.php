@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 07:08:54
-  from "C:\wamp64\www\meishi\templates\admin\article.html" */
+/* Smarty version 3.1.30, created on 2018-04-18 10:57:15
+  from "E:\phpstudy\WWW\meishi\templates\admin\product.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6ef06cf0ff3_22436108',
+  'unifunc' => 'content_5ad6b40bbd0fd0_32663724',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'e84f120e524df8197cc17f55d86e8876885b726c' => 
+    '352d58103baf9d0e9f57a39155ef4463916d12cd' => 
     array (
-      0 => 'C:\\wamp64\\www\\meishi\\templates\\admin\\article.html',
-      1 => 1524034326,
+      0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\admin\\product.html',
+      1 => 1524019217,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6ef06cf0ff3_22436108 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad6b40bbd0fd0_32663724 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -55,22 +55,24 @@ plugins/code/prettify.js"><?php echo '</script'; ?>
 <body>
 <div class="row">
     <div class="col-md-12">
-        <h1 class="page-head-line">文章管理</h1>
+        <h1 class="page-head-line">产品管理</h1>
     </div>
 </div>
-<a href="index.php?m=admin&f=article&a=addarticle"><button class="btn btn-success">添加</button></a>
+<a href="index.php?m=admin&f=product&a=addproduct"><button class="btn btn-success">添加</button></a>
 <div class="panel-body">
     <div class="table-responsive">
         <table class="table" align="center">
             <thead>
             <tr align="center">
                 <th>ID</th>
+                <th>产品名</th>
                 <th>导图</th>
-                <th>标题</th>
-                <!--<th>上线时间</th>-->
-                <!--<th>限购条件</th>-->
-                <!--<th>评分等级</th>-->
-                <th>查看量</th>
+                <th>简述</th>
+                <th>上线时间</th>
+                <th>限购条件</th>
+                <th>评分等级</th>
+                <th>推荐量</th>
+                <th>喜欢量</th>
                 <th>操作</th>
             </tr>
             </thead>
@@ -79,7 +81,7 @@ plugins/code/prettify.js"><?php echo '</script'; ?>
 
             </tbody>
             <tr>
-                <td align="center" colspan="7"><?php echo $_smarty_tpl->tpl_vars['pagestr']->value;?>
+                <td align="center" colspan="10"><?php echo $_smarty_tpl->tpl_vars['pagestr']->value;?>
 </td>
             </tr>
         </table>

@@ -11,7 +11,7 @@ header('content-type:text/html;charset=utf-8');
 class db{
     private $host='localhost';
     private $username='root';
-    private $pass='';
+    private $pass='root';
     private $dbname='food';
     private $port=3306;
     public $db;

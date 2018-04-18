@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 02:30:02
-  from "C:\wamp64\www\meishi\templates\admin\index.html" */
+/* Smarty version 3.1.30, created on 2018-04-18 10:57:12
+  from "E:\phpstudy\WWW\meishi\templates\admin\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6adaae21a07_03962829',
+  'unifunc' => 'content_5ad6b40880f6e4_36076227',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'caa6fdbafc0abedbaeb9049c5f9acd3a10dd03de' => 
+    'f8e7d0bfeeacfd100b1c59557dfa7e9974b763fd' => 
     array (
-      0 => 'C:\\wamp64\\www\\meishi\\templates\\admin\\index.html',
-      1 => 1524018103,
+      0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\admin\\index.html',
+      1 => 1524019217,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6adaae21a07_03962829 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad6b40880f6e4_36076227 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>

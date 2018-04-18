@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 07:03:19
+/* Smarty version 3.1.30, created on 2018-04-18 02:29:12
   from "C:\wamp64\www\meishi\templates\index\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6edb705f793_92732602',
+  'unifunc' => 'content_5ad6ad780729a9_28913294',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9cc3f26079f005ac4c443f4eb6168ca9f754720c' => 
     array (
       0 => 'C:\\wamp64\\www\\meishi\\templates\\index\\index.html',
-      1 => 1524034326,
+      1 => 1524018103,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6edb705f793_92732602 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad6ad780729a9_28913294 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,58 +54,7 @@ jquery-3.3.1.min.js"><?php echo '</script'; ?>
 		</form>
 	</div>
 <!--头部-->
-	<header>
-        <div class="tw_nav">
-            <a href="" class="logo_k">
-                <img src="<?php echo INDEX_IMG_PATH;?>
-logo.png" alt="">
-            </a>
-            <ul class="nav_list">
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>THE</b>PORJECT</p>
-                        <p class="nav_name">首页</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>Amy</b>BEAUTY</p>
-                        <p class="nav_name">艾美挚美</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>THE</b>Baker</p>
-                        <p class="nav_name">面点师</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>REC</b>OMMENDATION</p>
-                        <p class="nav_name">面点推荐</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>REC</b>OMMENDATION</p>
-                        <p class="nav_name">新闻中心</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="nav_line"></div>
-                        <p class="nav_ename"><b>ABO</b>UT US</p>
-                        <p class="nav_name">关于我们</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-	</header>
+	<header></header>
 <!--西点烘焙-->
 	<section class="westbake">
 		<div class="westbake_left">
@@ -413,63 +362,7 @@ wqdvdvssc_03.png" alt="">
 		</div>
 		<div class="news_more"><a href="">MORE</a></div>
 	</div>
-    <div class="footer">
-        <div class="foot_pic">
-            <img src="<?php echo INDEX_IMG_PATH;?>
-gwgw_02.png">
-        </div>
-        <div class="contact">
-            <div class="us">
-                <p class="conus">Contact us</p>
-                <p class="tel">0351-5050661</p>
-                <p class="address">山西省太原市迎泽区</p>
-            </div>
-            <div class="search1">
-                <input type="text">
-                <i class="sea iconfont">&#xe622;</i>
-            </div>
-        </div>
-        <div class="way">
-            <div class="contact_way">
-                <div class="four">
-                    <p class="Four">45°</p>
-                    <p class="way_lianxi">联系方式</p>
-                    <p class="way_ename">Contact information</p>
-                </div>
-                <ul class="wxwbem">
-                    <li>
-                        <i class="iconfont">&#xe63e;</i>
-                    </li>
-                    <li>
-                        <i class="iconfont">&#xe641;</i>
-                    </li>
-                    <li>
-                        <i class="iconfont">&#xe729;</i>
-                    </li>
-                </ul>
-            </div>
-            <ul class="public">
-                <li class="five">
-                    <p class="Four">01</p>
-                    <p class="way_lianxi">公众号&nbsp;&nbsp;<em>AIMEIMIANBAOFANG</em></p>
-                    <p class="way_ename">Public number</p>
-                </li>
-                <li class="five">
-                    <p class="Four">02</p>
-                    <p class="way_lianxi">邮箱&nbsp;&nbsp;<em>AIMEI@163.com</em></p>
-                    <p class="way_ename">Mailbox number</p>
-                </li>
-                <li class="five">
-                    <p class="Four">03</p>
-                    <p class="way_lianxi">电话&nbsp;&nbsp;<em>0350-5050662</em></p>
-                    <p class="way_ename">Telephone</p>
-                </li>
-            </ul>
-        </div>
-        <div class="bottom">
-            北京市公安局朝阳分局备案编号:110105000501&nbsp;&nbsp;&nbsp;&nbsp;Copyright&nbsp;©&nbsp;2006-2016&nbsp;ZCOOL
-        </div>
-    </div>
+
 </body>
 </html><?php }
 }

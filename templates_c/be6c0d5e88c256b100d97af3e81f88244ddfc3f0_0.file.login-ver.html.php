@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 07:08:43
+/* Smarty version 3.1.30, created on 2018-04-18 02:30:01
   from "C:\wamp64\www\meishi\templates\admin\login-ver.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6eefb37fea8_99409834',
+  'unifunc' => 'content_5ad6ada98c0634_41738845',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'be6c0d5e88c256b100d97af3e81f88244ddfc3f0' => 
     array (
       0 => 'C:\\wamp64\\www\\meishi\\templates\\admin\\login-ver.html',
-      1 => 1524034326,
+      1 => 1524018103,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6eefb37fea8_99409834 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad6ada98c0634_41738845 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
