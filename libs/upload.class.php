@@ -25,7 +25,7 @@ class upload{
         $uploadUrl=$this->path.'/'.$filename;
         //图片上传  move_uploaded_file(临时位置，指定位置)
         move_uploaded_file($this->file['tmp_name'],$uploadUrl);
-        echo "/food/".$uploadUrl;
+        echo $uploadUrl;
 
     }
 }
