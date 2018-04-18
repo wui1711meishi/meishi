@@ -1,55 +1,81 @@
+<?php
+/* Smarty version 3.1.30, created on 2018-04-18 17:01:23
+  from "E:\phpstudy\WWW\meishi\templates\index\about.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5ad709631470b8_72449780',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '209fe31f79ff14a20e68df99e280025f1af1eb9e' => 
+    array (
+      0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\about.html',
+      1 => 1524042030,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ad709631470b8_72449780 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>About us</title>
-    <link rel="stylesheet" href="{INDEX_CSS_PATH}aboutus.css">
+    <link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
+aboutus.css">
 </head>
 <body>
     <!--导航-->
     <div class="tw_header">
         <div class="tw_nav">
             <a href="" class="logo_k">
-                <img src="{INDEX_IMG_PATH}logo.png" alt="">
+                <img src="<?php echo INDEX_IMG_PATH;?>
+logo.png" alt="">
             </a>
             <ul class="nav_list">
                 <li>
-                    <a href="">
+                    <a href="index.php?m=index&a=main">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>THE</b>PORJECT</p>
                         <p class="nav_name">首页</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="index.php?m=index&a=aimei">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>Amy</b>BEAUTY</p>
                         <p class="nav_name">艾美挚美</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="index.php?m=index&a=baker">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>THE</b>Baker</p>
                         <p class="nav_name">面点师</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="index.php?m=index&a=product">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">面点推荐</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="index.php?m=index&a=news">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">新闻中心</p>
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li class="active">
+                    <a href="index.php?m=index&a=about">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>ABO</b>UT US</p>
                         <p class="nav_name">关于我们</p>
@@ -92,7 +118,8 @@
             <p class="taiyuan">IN TAIYUAN</p>
             <div class="logo_xian">
                 <div class="logo_xpic">
-                    <img src="{INDEX_IMG_PATH}logo.png" alt="">
+                    <img src="<?php echo INDEX_IMG_PATH;?>
+logo.png" alt="">
                 </div>
             </div>
             <div class="zhengwen">
@@ -141,7 +168,8 @@
             </div>
         </div>
         <div class="company_pic">
-            <img src="{INDEX_IMG_PATH}a1.jpg" alt="">
+            <img src="<?php echo INDEX_IMG_PATH;?>
+a1.jpg" alt="">
         </div>
         <div class="zw_foot">
             <p class="dream">为梦想步入和热爱烘焙的大学生<br>提供高品质的实训平台与高薪就业机会</p>
@@ -152,7 +180,8 @@
     <!--底部-->
     <div class="footer">
         <div class="foot_pic">
-            <img src="{INDEX_IMG_PATH}gwgw_02.png">
+            <img src="<?php echo INDEX_IMG_PATH;?>
+gwgw_02.png">
         </div>
         <div class="contact">
             <div class="us">
@@ -207,4 +236,5 @@
         </div>
     </div>
 </body>
-</html>
+</html><?php }
+}

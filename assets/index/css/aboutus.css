@@ -62,14 +62,14 @@ body{
     padding: 0 16px;
     font-weight: 700;
 }
-.nav_list li:last-child{
+.nav_list li.active{
     background: #f85739;
     box-shadow: 0 5px 15px 3px rgba(252,149,34,0.8);
 }
-.nav_list li:last-child a{
+.nav_list li.active a{
     color: #ffffff;
 }
-.nav_list li:last-child{
+.nav_list li.active{
     margin-right: 0;
 }
 .nav_list li a{

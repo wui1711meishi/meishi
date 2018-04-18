@@ -687,3 +687,15 @@ botton{
 .fenye{
 	padding-bottom: 20px;
 }
+/*面点师*/
+.mybaker{
+	height:300px;
+	display: flex;
+	justify-content: center;
+}
+/*产品*/
+.mypro{
+	height:500px;
+	overflow: hidden;
+	padding: 0;
+}

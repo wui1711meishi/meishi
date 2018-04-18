@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 16:21:35
+/* Smarty version 3.1.30, created on 2018-04-18 16:52:05
   from "E:\phpstudy\WWW\meishi\templates\index\product.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad7000f3974b5_35650336',
+  'unifunc' => 'content_5ad707350a2733_13918990',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd27972c317e15a781bd2c6574df41633f1100b4c' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\product.html',
-      1 => 1524039693,
+      1 => 1524041523,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad7000f3974b5_35650336 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad707350a2733_13918990 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,13 +86,7 @@ logo.png" alt="">
             </div>
         </div>
         <!--全部产品-->
-        <div class="product">
-            <div class="prod_name">
-                <div class="allpro">
-                    <p class="tit">面点推荐</p>
-                    <p class="etit">QUANBUCHANPING</p>
-                </div>
-            </div>
+    <div class="tw_content mypro">
             <ul class="prod_list">
                 <li>
                     <div class="prod_pic">
@@ -135,49 +129,7 @@ gw_25.png" alt="">
                     <i class="jia">&#xe651;</i>
                 </li>
             </ul>
-            <ul class="prod_list">
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_25.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_27.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_29.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_25.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-            </ul>
-        </div>
+    </div>
         <!--分页-->
         <div class="fenye">
             <ul class="paging">

@@ -1,7 +1,7 @@
 window.onload=function () {
 
     // 面点师轮播
-    let flag=true;
+    var flag=true;
     function move() {
         $('.baker_banner_tiao').children().children().children('.baker_every_introduceN').removeClass('introduceNactive')
         $('.baker_banner_tiao').children().children().children('.baker_every_introduceC').removeClass('introduceCactive')
@@ -41,10 +41,10 @@ window.onload=function () {
     })
 
     // 产品展示轮播
-    let proli=document.querySelectorAll('.show_s_banner_li1');
-    let prolbd=document.querySelectorAll('.show_s_bannerlbd > li');
-    let probanner=document.querySelector('.show_swiper');
-    let n=2;
+    var proli=document.querySelectorAll('.show_s_banner_li1');
+    var prolbd=document.querySelectorAll('.show_s_bannerlbd > li');
+    var probanner=document.querySelector('.show_swiper');
+    var n=2;
     function promove() {
         n--;
         if(n<0){
@@ -57,7 +57,7 @@ window.onload=function () {
         proli[n].classList.add('active');
         prolbd[n].classList.add('show_lbdactive')
     }
-    let prot=setInterval(promove,5000);
+    var prot=setInterval(promove,5000);
     probanner.onmouseenter=function () {
         clearInterval(prot);
     }

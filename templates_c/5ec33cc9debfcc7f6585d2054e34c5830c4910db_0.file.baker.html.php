@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 14:53:33
+/* Smarty version 3.1.30, created on 2018-04-18 16:39:14
   from "E:\phpstudy\WWW\meishi\templates\index\baker.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6eb6d66a2e8_91435176',
+  'unifunc' => 'content_5ad704324d7790_55225757',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5ec33cc9debfcc7f6585d2054e34c5830c4910db' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\baker.html',
-      1 => 1524033957,
+      1 => 1524040752,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6eb6d66a2e8_91435176 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad704324d7790_55225757 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -99,96 +99,63 @@ logo.png" alt="">
 </div>
 <!--头部-->
 <!--面点师-->
-<div class="baker">
-    <div class="show_title baker_title">
-    </div>
-    <div class="baker_content">
-        <div class="baker_horn1"></div>
-        <div class="baker_horn2"></div>
-        <div class="baker_horn3"></div>
-        <div class="baker_horn4"></div>
-        <div class="baker_bannerbox">
-            <div class="baker_banner_tiao">
-                <div class="baker_b_every">
-                    <a href="">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
+<div class="baker mybaker">
+    <div class="baker_b_every">
+        <a href="">
+            <img src="<?php echo INDEX_IMG_PATH;?>
 wqdsada_06.png" alt="">
-                        <div class="baker_every_introduceN">
-                            <span>李师傅</span>
-                            <span>著名烘焙大师 西点师</span>
-                        </div>
-                        <div class="baker_every_introduceC">
-                            最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
-                        </div>
-                        <section></section>
-                        <section></section>
-                    </a>
-                </div>
-                <div class="baker_b_every">
-                    <a href="">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-qqq.jpg" alt="">
-                        <div class="baker_every_introduceN">
-                            <span>詹姆斯</span>
-                            <span>著名烘焙大师 西点师</span>
-                        </div>
-                        <div class="baker_every_introduceC">
-                            最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
-                        </div>
-                        <section></section>
-                        <section></section>
-                    </a>
-                </div>
-                <div class="baker_b_every">
-                    <a href="">
-                        <img class="imgactive" src="<?php echo INDEX_IMG_PATH;?>
-wqdsada_09.png" alt="">
-                        <div class="baker_every_introduceN introduceNactive">
-                            <span>Toms</span>
-                            <span>著名烘焙大师 西点师</span>
-                        </div>
-                        <div class="baker_every_introduceC introduceCactive">
-                            最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
-                        </div>
-                        <section></section>
-                        <section></section>
-                    </a>
-                </div>
-                <div class="baker_b_every">
-                    <a href="">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-wwww.jpg" alt="">
-                        <div class="baker_every_introduceN">
-                            <span>+闻 周</span>
-                            <span>著名烘焙大师 西点师</span>
-                        </div>
-                        <div class="baker_every_introduceC">
-                            最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
-                        </div>
-                        <section></section>
-                        <section></section>
-                    </a>
-                </div>
-                <div class="baker_b_every">
-                    <a href="">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-eeee.jpg" alt="">
-                        <div class="baker_every_introduceN">
-                            <span>Jean</span>
-                            <span>著名烘焙大师 西点师</span>
-                        </div>
-                        <div class="baker_every_introduceC">
-                            最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
-                        </div>
-                        <section></section>
-                        <section></section>
-                    </a>
-                </div>
+            <div class="baker_every_introduceN">
+                <span>李师傅</span>
+                <span>著名烘焙大师 西点师</span>
             </div>
-        </div>
-        <ul class="leftkey"></ul>
-        <ul class="rightkey"></ul>
+            <div class="baker_every_introduceC">
+                最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
+            </div>
+            <section></section>
+            <section></section>
+        </a>
     </div>
+    <div class="baker_b_every">
+        <a href="">
+            <img src="<?php echo INDEX_IMG_PATH;?>
+wqdsada_06.png" alt="">
+            <div class="baker_every_introduceN">
+                <span>李师傅</span>
+                <span>著名烘焙大师 西点师</span>
+            </div>
+            <div class="baker_every_introduceC">
+                最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
+            </div>
+            <section></section>
+            <section></section>
+        </a>
+    </div>
+    <div class="baker_b_every">
+        <a href="">
+            <img src="<?php echo INDEX_IMG_PATH;?>
+wqdsada_06.png" alt="">
+            <div class="baker_every_introduceN">
+                <span>李师傅</span>
+                <span>著名烘焙大师 西点师</span>
+            </div>
+            <div class="baker_every_introduceC">
+                最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
+            </div>
+            <section></section>
+            <section></section>
+        </a>
+    </div>
+</div>
+<!--分页-->
+<div class="fenye">
+    <ul class="paging">
+        <li>上一页</li>
+        <li class="act">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>下一页</li>
+    </ul>
 </div>
 <footer>
     <div class="empty"></div>

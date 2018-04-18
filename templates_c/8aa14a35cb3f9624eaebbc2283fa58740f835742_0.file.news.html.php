@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 14:56:04
+/* Smarty version 3.1.30, created on 2018-04-18 16:52:26
   from "E:\phpstudy\WWW\meishi\templates\index\news.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6ec04648436_27340532',
+  'unifunc' => 'content_5ad7074a8e33c0_00473526',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8aa14a35cb3f9624eaebbc2283fa58740f835742' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\news.html',
-      1 => 1524034562,
+      1 => 1524040698,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6ec04648436_27340532 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad7074a8e33c0_00473526 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
