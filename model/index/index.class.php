@@ -44,12 +44,50 @@ class index extends adminPar
     //初始化
     function init()
     {
+        $db = new db();
+        $db->table = 'product';
+        $this->mainbaker();
+        $this->mainnews();
+        $proarr=$db->selAll('*','1 limit 0,3');
+        $proarr2=$db->selAll('*','1 limit 2,3');
+        $proarr3=$db->selAll('*','1 limit 6,3');
+        $this->smarty->assign('proarr',$proarr);
+        $this->smarty->assign('proarr2',$proarr2);
+        $this->smarty->assign('proarr3',$proarr3);
         $this->smarty->display('index/index.html');
+        $db->close();
     }
 
     //首页
     function main(){
+        $db = new db();
+        $db->table = 'product';
+        $this->mainbaker();
+        $this->mainnews();
+        $proarr=$db->selAll('*','1 limit 0,3');
+        $proarr2=$db->selAll('*','1 limit 2,3');
+        $proarr3=$db->selAll('*','1 limit 6,3');
+        $this->smarty->assign('proarr',$proarr);
+        $this->smarty->assign('proarr2',$proarr2);
+        $this->smarty->assign('proarr3',$proarr3);
         $this->smarty->display('index/index.html');
+        $db->close();
+    }
+
+    function mainbaker(){
+        $db = new db();
+        $db->table = 'baker';
+        $bakerarr=$db->selAll('*');
+        $this->smarty->assign('bakerarr',$bakerarr);
+        $db->close();
+    }
+
+    function mainnews(){
+        $db = new db();
+        $db->table = 'news';
+        $newsarr=$db->selAll('*','1 order by look desc limit 0,2');
+        $this->smarty->assign('newsarr',$newsarr);
+        $db->close();
     }
     //艾美挚美
     function aimei(){
