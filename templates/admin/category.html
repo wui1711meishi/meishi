@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{CSS_PATH}bootstrap.css" rel="stylesheet" />
+    <link href="{CSS_PATH}font-awesome.css" rel="stylesheet" />
+    <link href="{CSS_PATH}basic.css" rel="stylesheet" />
+    <link href="{CSS_PATH}custom.css" rel="stylesheet" />
+</head>
+<body>
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-head-line">分类管理</h1>
+    </div>
+</div>
+<a href="index.php?m=admin&f=menu&a=addcategory"><button class="btn btn-success">添加</button></a>
+<div class="panel-body">
+    <div class="table-responsive">
+        <table class="table" align="center">
+            <thead>
+            <tr align="center">
+                <th>ID</th>
+                <th>中文名字</th>
+                <th>英文名字</th>
+                <th>父目录</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {$str}
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="{JS_PATH}jquery-3.1.1.js"></script>
+<script src="{JS_PATH}bootstrap.js"></script>
+<script src="{JS_PATH}jquery.metisMenu.js"></script>
+</body>
+</html>
