@@ -28,52 +28,6 @@ class index extends adminPar
         $str = "<ol class='breadcrumb'>" . $str;
         return $str;
     }
-    //获取一级目录
-    function getNav($i = 0)
-    {
-        $db = new db();
-        $db->table = 'category';
-        $arr = $db->selAll('*', "cid='0'");
-        if (!$arr) {
-            $this->jump('数据有误！', 'index.php?m=index&f=index&a=main');
-        }
-        $img = explode('--', $arr[$i]['thumb']);
-        $this->smarty->assign('img', $img);
-        $this->smarty->assign('arr', $arr);
-    }
-    //初始化
-    function init()
-    {
-        $db = new db();
-        $db->table = 'product';
-        $this->mainbaker();
-        $this->mainnews();
-        $proarr=$db->selAll('*','1 limit 0,3');
-        $proarr2=$db->selAll('*','1 limit 2,3');
-        $proarr3=$db->selAll('*','1 limit 6,3');
-        $this->smarty->assign('proarr',$proarr);
-        $this->smarty->assign('proarr2',$proarr2);
-        $this->smarty->assign('proarr3',$proarr3);
-        $this->smarty->display('index/index.html');
-        $db->close();
-    }
-
-    //首页
-    function main(){
-        $db = new db();
-        $db->table = 'product';
-        $this->mainbaker();
-        $this->mainnews();
-        $proarr=$db->selAll('*','1 limit 0,3');
-        $proarr2=$db->selAll('*','1 limit 2,3');
-        $proarr3=$db->selAll('*','1 limit 6,3');
-        $this->smarty->assign('proarr',$proarr);
-        $this->smarty->assign('proarr2',$proarr2);
-        $this->smarty->assign('proarr3',$proarr3);
-        $this->smarty->display('index/index.html');
-        $db->close();
-    }
-
     function mainbaker(){
         $db = new db();
         $db->table = 'baker';
@@ -89,6 +43,49 @@ class index extends adminPar
         $this->smarty->assign('newsarr',$newsarr);
         $db->close();
     }
+    //初始化
+    function init()
+    {
+        $db = new db();
+        $db->table = 'product';
+        $this->mainbaker();
+        $this->mainnews();
+        $proarr=$db->selAll('*','1 order by id desc limit 0,3');
+        $proarr2=$db->selAll('*','1 order by id desc limit 3,3');
+        $proarr3=$db->selAll('*','1 order by id desc limit 6,3');
+        $this->smarty->assign('proarr',$proarr);
+        $this->smarty->assign('proarr2',$proarr2);
+        $this->smarty->assign('proarr3',$proarr3);
+        $this->smarty->display('index/index.html');
+        $db->close();
+    }
+
+    //首页
+    function main(){
+        $db = new db();
+        $db->table = 'product';
+        $this->mainbaker();
+        $this->mainnews();
+        $proarr=$db->selAll('*','1 order by id desc limit 0,3');
+        $proarr2=$db->selAll('*','1 order by id desc limit 3,3');
+        $proarr3=$db->selAll('*','1 order by id desc limit 6,3');
+        $this->smarty->assign('proarr',$proarr);
+        $this->smarty->assign('proarr2',$proarr2);
+        $this->smarty->assign('proarr3',$proarr3);
+        $this->smarty->display('index/index.html');
+        $db->close();
+    }
+
+
+
+
+
+
+
+
+
+
+
     //艾美挚美
     function aimei(){
 
@@ -105,10 +102,6 @@ class index extends adminPar
         $this->smarty->assign('proarr2',$arr);
 
         $this->smarty->display('index/aimei.html');
-    }
-    //面点师
-    function baker(){
-        $this->smarty->display('index/baker.html');
     }
     //关于我们
     function about(){
