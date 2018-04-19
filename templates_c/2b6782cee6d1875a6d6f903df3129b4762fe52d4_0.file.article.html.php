@@ -1,15 +1,41 @@
+<?php
+/* Smarty version 3.1.30, created on 2018-04-19 05:32:05
+  from "D:\wamp\www\meishi\templates\index\article.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5ad80db598f652_02417515',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2b6782cee6d1875a6d6f903df3129b4762fe52d4' => 
+    array (
+      0 => 'D:\\wamp\\www\\meishi\\templates\\index\\article.html',
+      1 => 1524108721,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ad80db598f652_02417515 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{INDEX_CSS_PATH}article.css">
+    <link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
+article.css">
     <title>文章详情</title>
 </head>
 <body>
 <div class="tw_header">
     <div class="tw_nav">
         <a href="" class="logo_k">
-            <img src="{INDEX_IMG_PATH}logo.png" alt="">
+            <img src="<?php echo INDEX_IMG_PATH;?>
+logo.png" alt="">
         </a>
         <ul class="nav_list">
             <li>
@@ -112,10 +138,12 @@
         <div class="box_center">
             <p class="center_text">蛋糕的美味就是可以让人吃了还想吃，拥有诱惑难挡的魅力。85度c蛋糕店里不仅有美味的蛋糕，</br>
                     还有面包、咖啡、茶饮等多种产品，让你多种口味随意选择，不管想吃哪种，这里都可以找到所需要的。</p>
-            <img src="{INDEX_IMG_PATH}center_03.png" alt="">
+            <img src="<?php echo INDEX_IMG_PATH;?>
+center_03.png" alt="">
             <div class="dessert">
                 <div class="dessert_left">
-                    <img src="{INDEX_IMG_PATH}dessert_06.png" alt="">
+                    <img src="<?php echo INDEX_IMG_PATH;?>
+dessert_06.png" alt="">
                 </div>
                 <div class="dessert_right">
                     <h4>甜点的邂逅</h4>
@@ -147,7 +175,8 @@
                     <h5>QUANBUCHANPING</h5>
                     <div class="cookie_down"></div>
                     <div class="cookie_up">
-                        <img src="{INDEX_IMG_PATH}cookie_10.png" alt="">
+                        <img src="<?php echo INDEX_IMG_PATH;?>
+cookie_10.png" alt="">
                     </div>
                 </div>
                 <div class="cookie_1 cookie_2">
@@ -155,14 +184,16 @@
                     <h5>QUANBUCHANPING</h5>
                     <div class="cookie_down"></div>
                     <div class="cookie_up">
-                        <img src="{INDEX_IMG_PATH}cookie_12.png" alt="">
+                        <img src="<?php echo INDEX_IMG_PATH;?>
+cookie_12.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="rigth_side">
-        <img src="{INDEX_IMG_PATH}gyt_sides_03.png" alt="">
+        <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_sides_03.png" alt="">
     </div>
 </section>
 <section class="page">
@@ -191,7 +222,8 @@
         </div>
     </div>
     <div class="left_side">
-        <img src="{INDEX_IMG_PATH}gyt_sides_05.png" alt="">
+        <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_sides_05.png" alt="">
     </div>
 </section>
 <section class="comment">
@@ -202,7 +234,8 @@
     <ul class="comment_list">
         <li>
             <div class="comment_photo">
-                <img src="{INDEX_IMG_PATH}gyt_photo_06.png" alt="">
+                <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_06.png" alt="">
             </div>
             <div class="com">
                 <div class="com_top">
@@ -226,7 +259,8 @@
         </li>
         <li class="back">
             <div class="comment_photo">
-                <img src="{INDEX_IMG_PATH}gyt_photo_10.png" alt="">
+                <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_10.png" alt="">
             </div>
             <div class="com">
                 <div class="com_top">
@@ -250,7 +284,8 @@
         </li>
         <li>
             <div class="comment_photo">
-                <img src="{INDEX_IMG_PATH}gyt_photo_13.png" alt="">
+                <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_13.png" alt="">
             </div>
             <div class="com">
                 <div class="com_top">
@@ -274,7 +309,8 @@
         </li>
         <li>
             <div class="comment_photo">
-                <img src="{INDEX_IMG_PATH}gyt_photo_15.png" alt="">
+                <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_15.png" alt="">
             </div>
             <div class="com">
                 <div class="com_top">
@@ -298,7 +334,8 @@
         </li>
         <li class="back">
             <div class="comment_photo">
-                <img src="{INDEX_IMG_PATH}gyt_photo_10.png" alt="">
+                <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_10.png" alt="">
             </div>
             <div class="com">
                 <div class="com_top">
@@ -336,12 +373,14 @@
     <div class="gray">
         <p>北京市公安局朝阳分局备案编号:110105000501   Copyright © 2006-2016 ZCOOL</p>
     </div>
-    <img src="{INDEX_IMG_PATH}cookie_04.png" alt="">
+    <img src="<?php echo INDEX_IMG_PATH;?>
+cookie_04.png" alt="">
     <div class="join">
         <span></span>
         <div class="join_bottom">
             <div class="join_left">
-                <img src="{INDEX_IMG_PATH}joinus_16.png" alt="">
+                <img src="<?php echo INDEX_IMG_PATH;?>
+joinus_16.png" alt="">
                 <p>请留下您的联系方式</p>
             </div>
             <form action="">
@@ -352,4 +391,5 @@
     </div>
 </footer>
 </body>
-</html>
+</html><?php }
+}

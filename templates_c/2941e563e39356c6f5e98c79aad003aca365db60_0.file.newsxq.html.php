@@ -1,17 +1,44 @@
+<?php
+/* Smarty version 3.1.30, created on 2018-04-19 05:55:10
+  from "D:\wamp\www\meishi\templates\index\newsxq.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5ad8131e8f4e96_79333682',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2941e563e39356c6f5e98c79aad003aca365db60' => 
+    array (
+      0 => 'D:\\wamp\\www\\meishi\\templates\\index\\newsxq.html',
+      1 => 1524110107,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ad8131e8f4e96_79333682 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>新闻详情</title>
-    <!--<link rel="stylesheet" href="{INDEX_CSS_PATH}twlb.css">-->
-    <link rel="stylesheet" href="{INDEX_CSS_PATH}new.css">
+    <!--<link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
+twlb.css">-->
+    <link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
+new.css">
 </head>
 <body>
 
     <div class="tw_header">
         <div class="tw_nav">
             <a href="" class="logo_k">
-                <img src="{INDEX_IMG_PATH}logo.png" alt="">
+                <img src="<?php echo INDEX_IMG_PATH;?>
+logo.png" alt="">
             </a>
             <ul class="nav_list">
                 <li>
@@ -90,15 +117,18 @@
     </div>
     <div class="box">
         <div class="box_top">
-            <h4>{$arr['title']}</h4>
+            <h4><?php echo $_smarty_tpl->tpl_vars['arr']->value['title'];?>
+</h4>
             <h5>R E C O M M E N U O N E R E C O M M E N U O N E R E C O M M E N U O N E</h5>
             <div class="label_text"><p>
-                “{$arr['descrition']}”
+                “<?php echo $_smarty_tpl->tpl_vars['arr']->value['descrition'];?>
+”
             </p></div>
         </div>
         <div class="box_line">
             <div class="time">
-                <span>&#xe619;</span>&nbsp;&nbsp;{$arr['time']}
+                <span>&#xe619;</span>&nbsp;&nbsp;<?php echo $_smarty_tpl->tpl_vars['arr']->value['time'];?>
+
                 <span>&#xe60d;</span>&nbsp;&nbsp;2360
             </div>
         </div>
@@ -107,10 +137,13 @@
             <h5>R E C O M M E N U O N E </h5>
         </div>
         <p class="cake">蛋糕的美味就是可以让人吃了还想吃，拥有诱惑难挡的魅力。85度c蛋糕店里不仅有美味的蛋糕，还有面包、咖啡、茶饮等多种产品，让你多种口味随意选择，不管想吃哪种，这里都可以找到所需要的。</p>
-        <div class="maintext">{$arr['content']}</div>
+        <div class="maintext"><?php echo $_smarty_tpl->tpl_vars['arr']->value['content'];?>
+</div>
         <div class="box_photo">
-            <img src="{INDEX_IMG_PATH}new_13.png" alt="">
-            <img src="{INDEX_IMG_PATH}new_11.png" alt="">
+            <img src="<?php echo INDEX_IMG_PATH;?>
+new_13.png" alt="">
+            <img src="<?php echo INDEX_IMG_PATH;?>
+new_11.png" alt="">
         </div>
     </div>
     <section class="comment">
@@ -125,7 +158,8 @@
         <ul class="comment_list">
             <li>
                 <div class="comment_photo">
-                    <img src="{INDEX_IMG_PATH}gyt_photo_06.png" alt="">
+                    <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_06.png" alt="">
                 </div>
                 <div class="com">
                     <div class="com_top">
@@ -149,7 +183,8 @@
             </li>
             <li class="back">
                 <div class="comment_photo">
-                    <img src="{INDEX_IMG_PATH}gyt_photo_10.png" alt="">
+                    <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_10.png" alt="">
                 </div>
                 <div class="com">
                     <div class="com_top">
@@ -173,7 +208,8 @@
             </li>
             <li>
                 <div class="comment_photo">
-                    <img src="{INDEX_IMG_PATH}gyt_photo_13.png" alt="">
+                    <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_13.png" alt="">
                 </div>
                 <div class="com">
                     <div class="com_top">
@@ -197,7 +233,8 @@
             </li>
             <li>
                 <div class="comment_photo">
-                    <img src="{INDEX_IMG_PATH}gyt_photo_15.png" alt="">
+                    <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_15.png" alt="">
                 </div>
                 <div class="com">
                     <div class="com_top">
@@ -221,7 +258,8 @@
             </li>
             <li class="back">
                 <div class="comment_photo">
-                    <img src="{INDEX_IMG_PATH}gyt_photo_10.png" alt="">
+                    <img src="<?php echo INDEX_IMG_PATH;?>
+gyt_photo_10.png" alt="">
                 </div>
                 <div class="com">
                     <div class="com_top">
@@ -254,10 +292,12 @@
         </ul>
     </section>
     <div class="right_side">
-        <img src="{INDEX_IMG_PATH}new_right_18.png" alt="">
+        <img src="<?php echo INDEX_IMG_PATH;?>
+new_right_18.png" alt="">
     </div>
     <div class="left_side">
-        <img src="{INDEX_IMG_PATH}new_left_20.png" alt="">
+        <img src="<?php echo INDEX_IMG_PATH;?>
+new_left_20.png" alt="">
     </div>
 </section>
 <footer>
@@ -266,12 +306,14 @@
     <div class="gray">
         <p>北京市公安局朝阳分局备案编号:110105000501   Copyright © 2006-2016 ZCOOL</p>
     </div>
-    <img src="{INDEX_IMG_PATH}new_cookie_113.png" alt="">
+    <img src="<?php echo INDEX_IMG_PATH;?>
+new_cookie_113.png" alt="">
     <div class="join">
         <span></span>
         <div class="join_bottom">
             <div class="join_left">
-                <img src="{INDEX_IMG_PATH}joinus_16.png" alt="">
+                <img src="<?php echo INDEX_IMG_PATH;?>
+joinus_16.png" alt="">
                 <p>请留下您的联系方式</p>
             </div>
             <form action="">
@@ -282,4 +324,5 @@
     </div>
 </footer>
 </body>
-</html>
+</html><?php }
+}

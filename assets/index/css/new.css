@@ -7,18 +7,18 @@
     url('https://at.alicdn.com/t/font_630114_d892jhgi1hxe0zfr.ttf') format('truetype'),
     url('https://at.alicdn.com/t/font_630114_d892jhgi1hxe0zfr.svg#iconfont') format('svg');
 }
-header{
-    width: 100%;
-    height: 424px;
-    background-image: url("../images/new_top_bg_01.png");
-    background-size: cover;
-    overflow: hidden;
-}
+/*header{*/
+    /*width: 100%;*/
+    /*height: 424px;*/
+    /*background-image: url("../images/new_top_bg_01.png");*/
+    /*background-size: cover;*/
+    /*overflow: hidden;*/
+/*}*/
 .tw_header{
     width: 100%;
     height: 424px;
     margin: 0 auto;
-    /*background: url("../images/gw_01.png") no-repeat center center;*/
+    background: url("../images/new_top_bg_01.png") no-repeat center center;
     background-size: 100% 100%;
     padding-top: 69px;
     box-sizing: border-box;
@@ -43,20 +43,22 @@ header{
 .nav_list{
     float: left;
     width: 798px;
-    height: 100%;
+    height: 70px;
     margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(241,89,39,0.8);
 }
 .nav_list li{
     width: auto;
     height: 70px;
-    float: left;
     margin-right: 10px;
-    padding: 0 16px;
+    padding: 0 14px;
     font-weight: 700;
 }
 .nav_list li.active{
-    background: #f85739;
-    box-shadow: 0 5px 15px 3px rgba(252,149,34,0.8);
+    background: #fad113;
+    box-shadow: 0 5px 15px 3px rgba(241,89,39,0.8);
 }
 .nav_list li.active a{
     color: #ffffff;
@@ -68,7 +70,7 @@ header{
     display: block;
     width: 100%;
     height: 100%;
-    color: #333333;
+    color: #ffffff;
     padding-top: 6px;
     box-sizing: border-box;
 }
@@ -76,7 +78,7 @@ header{
     width: 23px;
     height: 2px;
     margin: 0 auto;
-    background: #e96c31;
+    background: #ffffff;
     margin-bottom: 10px;
 }
 .nav_list li:hover a .nav_line{
