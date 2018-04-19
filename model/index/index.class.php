@@ -113,8 +113,4 @@ class index extends adminPar
     function article(){
         $this->smarty->display('index/article.html');
     }
-    //新闻详情
-    function newsxq(){
-        $this->smarty->display('index/newsxq.html');
-    }
 }

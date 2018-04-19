@@ -732,3 +732,9 @@ botton{
 	background: #f1cc3d;
 	color: #ffffff;
 }
+
+
+/*导航*/
+.nav_list li{
+	padding:0 14px;
+}
