@@ -29,10 +29,10 @@ class news extends adminPar
         $db->table='news';
         $arr=$db->selOne("*","id=$id");
         $this->smarty->assign("arr",$arr);
+        $db=new db();
+        $db->table='message';
+        $mess=$db->selAll('*',"1 order by id desc");
+        $this->smarty->assign('mess',$mess);
         $this->smarty->display('index/newsxq.html');
-    }
-    //面点师
-    function baker(){
-        $this->smarty->display('index/baker.html');
     }
 }

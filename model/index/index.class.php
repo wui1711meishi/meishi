@@ -111,6 +111,10 @@ class index extends adminPar
 
     //文章详情
     function article(){
+        $db=new db();
+        $db->table='message';
+        $mess=$db->selAll('*',"1 order by id desc");
+        $this->smarty->assign('mess',$mess);
         $this->smarty->display('index/article.html');
     }
 }

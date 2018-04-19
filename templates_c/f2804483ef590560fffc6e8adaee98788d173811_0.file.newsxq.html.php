@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-19 11:59:43
+/* Smarty version 3.1.30, created on 2018-04-19 18:21:24
   from "E:\phpstudy\WWW\meishi\templates\index\newsxq.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad8142fd78631_76361935',
+  'unifunc' => 'content_5ad86da48bbe39_29390191',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f2804483ef590560fffc6e8adaee98788d173811' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\newsxq.html',
-      1 => 1524110293,
+      1 => 1524133279,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad8142fd78631_76361935 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad86da48bbe39_29390191 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -156,140 +156,53 @@ new_11.png" alt="">
             <h6>QUANBUCHANPING</h6>
         </div>
         <ul class="comment_list">
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['mess']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
             <li>
                 <div class="comment_photo">
-                    <img src="<?php echo INDEX_IMG_PATH;?>
-gyt_photo_06.png" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['thumb'];?>
+" alt="">
                 </div>
                 <div class="com">
                     <div class="com_top">
-                        <h6>可爱的吃货</h6>
+                        <h6><?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
+</h6>
                         <span class="com_icon">
-                        <i>&#xe619;</i>&nbsp;&nbsp;2018.01.13
+                        <i>&#xe619;</i> <?php echo $_smarty_tpl->tpl_vars['item']->value['time'];?>
+
                     </span>
                         <span class="com_icon eye">
-                        <i>&#xe60d;</i>&nbsp;&nbsp;2360
                     </span>
                     </div>
                     <div class="com_line">
                         <span></span>
                         <span></span>
                     </div>
-                    <p>厉害了这个新品，我要带朋友经常来光顾，吃友们有没有你们觉得美味的，帮我推荐一下好吗？</p>
+                    <p><?php echo $_smarty_tpl->tpl_vars['item']->value['mess'];?>
+</p>
                 </div>
                 <a href="" class="set">
-                    <span>回复</span>
+                    <!--<span>回复</span>-->
                 </a>
             </li>
-            <li class="back">
-                <div class="comment_photo">
-                    <img src="<?php echo INDEX_IMG_PATH;?>
-gyt_photo_10.png" alt="">
-                </div>
-                <div class="com">
-                    <div class="com_top">
-                        <h6>甜点烘焙</h6>
-                        <span class="com_icon">
-                        <i>&#xe619;</i>&nbsp;&nbsp;2018.01.13
-                    </span>
-                        <span class="com_icon eye">
-                        <i>&#xe60d;</i>&nbsp;&nbsp;2360
-                    </span>
-                    </div>
-                    <div class="com_line">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <p>我推荐最新的法国风情马卡龙哦，送朋友很贴心美味好吃的呢！</p>
-                </div>
-                <a href="" class="set">
-                    <span>回复</span>
-                </a>
-            </li>
-            <li>
-                <div class="comment_photo">
-                    <img src="<?php echo INDEX_IMG_PATH;?>
-gyt_photo_13.png" alt="">
-                </div>
-                <div class="com">
-                    <div class="com_top">
-                        <h6>可爱的吃货</h6>
-                        <span class="com_icon">
-                        <i>&#xe619;</i>&nbsp;&nbsp;2018.01.13
-                    </span>
-                        <span class="com_icon eye">
-                        <i>&#xe60d;</i>&nbsp;&nbsp;2360
-                    </span>
-                    </div>
-                    <div class="com_line">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <p>厉害了这个新品，我要带朋友经常来光顾，吃友们有没有你们觉得美味的，帮我推荐一下好吗？</p>
-                </div>
-                <a href="" class="set">
-                    <span>回复</span>
-                </a>
-            </li>
-            <li>
-                <div class="comment_photo">
-                    <img src="<?php echo INDEX_IMG_PATH;?>
-gyt_photo_15.png" alt="">
-                </div>
-                <div class="com">
-                    <div class="com_top">
-                        <h6>可爱的吃货</h6>
-                        <span class="com_icon">
-                        <i>&#xe619;</i>&nbsp;&nbsp;2018.01.13
-                    </span>
-                        <span class="com_icon eye">
-                        <i>&#xe60d;</i>&nbsp;&nbsp;2360
-                    </span>
-                    </div>
-                    <div class="com_line">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <p>厉害了这个新品，我要带朋友经常来光顾，吃友们有没有你们觉得美味的，帮我推荐一下好吗？</p>
-                </div>
-                <a href="" class="set">
-                    <span>回复</span>
-                </a>
-            </li>
-            <li class="back">
-                <div class="comment_photo">
-                    <img src="<?php echo INDEX_IMG_PATH;?>
-gyt_photo_10.png" alt="">
-                </div>
-                <div class="com">
-                    <div class="com_top">
-                        <h6>甜点烘焙</h6>
-                        <span class="com_icon">
-                        <i>&#xe619;</i>&nbsp;&nbsp;2018.01.13
-                    </span>
-                        <span class="com_icon eye">
-                        <i>&#xe60d;</i>&nbsp;&nbsp;2360
-                    </span>
-                    </div>
-                    <div class="com_line">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <p>我推荐最新的法国风情马卡龙哦，送朋友很贴心美味好吃的呢！</p>
-                </div>
-                <a href="" class="set">
-                    <span>回复</span>
-                </a>
-            </li>
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
         </ul>
-        <ul class="num">
-            <li><a href="">上一页</a></li>
-            <li class="number"><a href="">1</a></li>
-            <li class="number" id="chose"><a href="">2</a></li>
-            <li class="number"><a href="">3</a></li>
-            <li class="number"><a href="">4</a></li>
-            <li><a href="">下一页</a></li>
-        </ul>
+        <!--<ul class="num">-->
+            <!--<li><a href="">上一页</a></li>-->
+            <!--<li class="number"><a href="">1</a></li>-->
+            <!--<li class="number" id="chose"><a href="">2</a></li>-->
+            <!--<li class="number"><a href="">3</a></li>-->
+            <!--<li class="number"><a href="">4</a></li>-->
+            <!--<li><a href="">下一页</a></li>-->
+        <!--</ul>-->
     </section>
     <div class="right_side">
         <img src="<?php echo INDEX_IMG_PATH;?>
