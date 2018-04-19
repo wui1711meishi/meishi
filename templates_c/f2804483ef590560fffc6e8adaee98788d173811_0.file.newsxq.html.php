@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 17:06:42
+/* Smarty version 3.1.30, created on 2018-04-19 10:54:58
   from "E:\phpstudy\WWW\meishi\templates\index\newsxq.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad70aa23fe352_38948915',
+  'unifunc' => 'content_5ad8050200afc4_96647140',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f2804483ef590560fffc6e8adaee98788d173811' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\newsxq.html',
-      1 => 1524042400,
+      1 => 1524106366,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad70aa23fe352_38948915 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad8050200afc4_96647140 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,42 +42,42 @@ logo.png" alt="">
             </a>
             <ul class="nav_list">
                 <li>
-                    <a href="">
+                    <a href="index.php?m=index&a=main">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>THE</b>PORJECT</p>
                         <p class="nav_name">首页</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="index.php?m=index&a=aimei">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>Amy</b>BEAUTY</p>
                         <p class="nav_name">艾美挚美</p>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="">
+                <li>
+                    <a href="index.php?m=index&f=baker">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>THE</b>Baker</p>
                         <p class="nav_name">面点师</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="index.php?m=index&f=product">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">面点推荐</p>
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li class="active">
+                    <a href="index.php?m=index&a=news&f=news">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">新闻中心</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="index.php?m=index&a=about">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>ABO</b>UT US</p>
                         <p class="nav_name">关于我们</p>
@@ -117,15 +117,18 @@ logo.png" alt="">
     </div>
     <div class="box">
         <div class="box_top">
-            <h4>最新定制-澳洲特质水果面包</h4>
+            <h4><?php echo $_smarty_tpl->tpl_vars['arr']->value['title'];?>
+</h4>
             <h5>R E C O M M E N U O N E R E C O M M E N U O N E R E C O M M E N U O N E</h5>
             <div class="label_text"><p>
-                “蛋糕的美味就是可以让人吃了还想吃，拥有诱惑难挡的魅力。85度c蛋糕店里不仅有美味的蛋糕，还有面包、咖啡、茶饮等多种产品，让你多种口味随意选择，不管想吃哪种，这里都可以找到所需要的。”
+                “<?php echo $_smarty_tpl->tpl_vars['arr']->value['descrition'];?>
+”
             </p></div>
         </div>
         <div class="box_line">
             <div class="time">
-                <span>&#xe619;</span>&nbsp;&nbsp;2018.01.15
+                <span>&#xe619;</span>&nbsp;&nbsp;<?php echo $_smarty_tpl->tpl_vars['arr']->value['time'];?>
+
                 <span>&#xe60d;</span>&nbsp;&nbsp;2360
             </div>
         </div>
@@ -134,15 +137,8 @@ logo.png" alt="">
             <h5>R E C O M M E N U O N E </h5>
         </div>
         <p class="cake">蛋糕的美味就是可以让人吃了还想吃，拥有诱惑难挡的魅力。85度c蛋糕店里不仅有美味的蛋糕，还有面包、咖啡、茶饮等多种产品，让你多种口味随意选择，不管想吃哪种，这里都可以找到所需要的。</p>
-        <p class="maintext">公司文化:公司以“专注网站,用心服务”为核心价值,一切以用户需求为中心,希望通过专业水平和不懈努力,重塑企业网络形象,为企业产品推广文化发展提供服务指导;塑企业网络形象,为企业产品推广文化发展提供塑企业网络形象,为企业产品推广文化发展提供
-        </p>
-        <p class="maintext">三年来,XX网站策划一直秉承以用户需求为核心,在专注XX本地市场开拓的同时,为超过一百家中小企业提供网站策划服务,优质、用心的服务赢得了众多企业的信赖和好评,在XX地区逐渐树立起公司良好品牌。公司不仅仅提供专业的网站策划服务,同时还建立了完善的售后服务体系,为企业发展中遇到的问题和困难提供指导帮助。我们相信,通过我们的不断努力和追求,一定能够实现与中小企业的互利共赢!</p>
-        <img src="<?php echo INDEX_IMG_PATH;?>
-new_lemon.png" alt="" id="lemon">
-        <p class="maintext">公司文化:公司以“专注网站,用心服务”为核心价值,一切以用户需求为中心,希望通过专业水平和不懈努力,重塑企业网络形象,为企业产品推广文化发展提供服务指导;塑企业网络形象,为企业产品推广文化发展提供塑企业网络形象,为企业产品推广文化发展提供
-        </p>
-        <p class="maintext">三年来,XX网站策划一直秉承以用户需求为核心,在专注XX本地市场开拓的同时,为超过一百家中小企业提供网站策划服务,优质、用心的服务赢得了众多企业的信赖和好评,在XX地区逐渐树立起公司良好品牌。公司不仅仅提供专业的网站策划服务,同时还建立了完善的售后服务体系,为企业发展中遇到的问题和困难提供指导帮助。我们相信,通过我们的不断努力和追求,一定能够实现与中小企业的互利共赢!
-        </p>
+        <div class="maintext"><?php echo $_smarty_tpl->tpl_vars['arr']->value['content'];?>
+</div>
         <div class="box_photo">
             <img src="<?php echo INDEX_IMG_PATH;?>
 new_13.png" alt="">

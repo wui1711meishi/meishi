@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 16:52:26
+/* Smarty version 3.1.30, created on 2018-04-19 10:55:03
   from "E:\phpstudy\WWW\meishi\templates\index\news.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad7074a8e33c0_00473526',
+  'unifunc' => 'content_5ad805078115e3_31556900',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8aa14a35cb3f9624eaebbc2283fa58740f835742' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\news.html',
-      1 => 1524040698,
+      1 => 1524106393,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad7074a8e33c0_00473526 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad805078115e3_31556900 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,6 +29,10 @@ function content_5ad7074a8e33c0_00473526 (Smarty_Internal_Template $_smarty_tpl)
     <title>新闻中心</title>
     <link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
 xwlb.css">
+    <?php echo '<script'; ?>
+ src="<?php echo INDEX_JS_PATH;?>
+jquery-3.3.1.min.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
     <div class="tw_header">
@@ -54,21 +58,21 @@ logo.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=baker">
+                    <a href="index.php?m=index&f=baker">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>THE</b>Baker</p>
                         <p class="nav_name">面点师</p>
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=product">
+                    <a href="index.php?m=index&f=product">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">面点推荐</p>
                     </a>
                 </li>
                 <li class="active">
-                    <a href="index.php?m=index&a=news">
+                    <a href="index.php?m=index&a=news&f=news">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">新闻中心</p>
@@ -139,138 +143,48 @@ wqsss_03.png" alt="">
                 <em>THE NEWS <i>&#xe601;</i> LIST YEAH</em>
             </div>
             <ul class="list_yeah">
+                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
                 <li>
-                    <div class="yeah_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-wqerrtw_05.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                            <div class="new_hot">
-                                <a>NEW</a>
-                                <a id="hot">HOT</a>
+                    <a href="index.php?m=index&f=news&a=detail&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+">
+                        <div class="yeah_pic">
+                            <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['thumb'];?>
+" alt="">
+                        </div>
+                        <div class="new_cont">
+                            <div class="new_cont_tit">
+                                <h4><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
+</h4>
+                                <div class="new_hot">
+                                    <a>NEW</a>
+                                    <a id="hot">HOT</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-wqerrtw_03.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-wqerrtw_05.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                            <div class="new_hot">
-                                <a>NEW</a>
-                                <a id="hot">HOT</a>
+                            <div class="design">
+                                <h5><?php echo $_smarty_tpl->tpl_vars['item']->value['descrition'];?>
+</h5>
+                                <em><i>&#xe61c;</i><?php echo $_smarty_tpl->tpl_vars['item']->value['time'];?>
+</em>
                             </div>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-wqerrtw_09.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-wqerrtw_18.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                            <div class="new_hot">
-                                <a>NEW</a>
-                                <a id="hot">HOT</a>
+                            <div class="hr">
+                                <div class="zd"></div>
+                                <div class="yd"></div>
                             </div>
+                            <p class="content_zi"><?php echo $_smarty_tpl->tpl_vars['item']->value['content'];?>
+</p>
                         </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
+                    </a>
                 </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-wqerrtw_15.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
+                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
             </ul>
         </div>
         <!--分页-->
@@ -343,5 +257,11 @@ gwgw_02.png">
         </div>
     </div>
 </body>
-</html><?php }
+</html>
+<?php echo '<script'; ?>
+>
+    var a=$('.content_zi').html().substr(0,200);
+    $('.content_zi').html(a+'...');
+<?php echo '</script'; ?>
+><?php }
 }

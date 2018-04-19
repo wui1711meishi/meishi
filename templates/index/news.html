@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>新闻中心</title>
     <link rel="stylesheet" href="{INDEX_CSS_PATH}xwlb.css">
+    <script src="{INDEX_JS_PATH}jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <div class="tw_header">
@@ -28,21 +29,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=baker">
+                    <a href="index.php?m=index&f=baker">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>THE</b>Baker</p>
                         <p class="nav_name">面点师</p>
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=product">
+                    <a href="index.php?m=index&f=product">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">面点推荐</p>
                     </a>
                 </li>
                 <li class="active">
-                    <a href="index.php?m=index&a=news">
+                    <a href="index.php?m=index&a=news&f=news">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">新闻中心</p>
@@ -112,132 +113,33 @@
                 <em>THE NEWS <i>&#xe601;</i> LIST YEAH</em>
             </div>
             <ul class="list_yeah">
+                {foreach $arr as $item}
                 <li>
-                    <div class="yeah_pic">
-                        <img src="{INDEX_IMG_PATH}wqerrtw_05.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                            <div class="new_hot">
-                                <a>NEW</a>
-                                <a id="hot">HOT</a>
+                    <a href="index.php?m=index&f=news&a=detail&id={$item['id']}">
+                        <div class="yeah_pic">
+                            <img src="{$item['thumb']}" alt="">
+                        </div>
+                        <div class="new_cont">
+                            <div class="new_cont_tit">
+                                <h4>{$item['title']}</h4>
+                                <div class="new_hot">
+                                    <a>NEW</a>
+                                    <a id="hot">HOT</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="{INDEX_IMG_PATH}wqerrtw_03.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="{INDEX_IMG_PATH}wqerrtw_05.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                            <div class="new_hot">
-                                <a>NEW</a>
-                                <a id="hot">HOT</a>
+                            <div class="design">
+                                <h5>{$item['descrition']}</h5>
+                                <em><i>&#xe61c;</i>{$item['time']}</em>
                             </div>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="{INDEX_IMG_PATH}wqerrtw_09.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="{INDEX_IMG_PATH}wqerrtw_18.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                            <div class="new_hot">
-                                <a>NEW</a>
-                                <a id="hot">HOT</a>
+                            <div class="hr">
+                                <div class="zd"></div>
+                                <div class="yd"></div>
                             </div>
+                            <p class="content_zi">{$item['content']}</p>
                         </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
+                    </a>
                 </li>
-                <li>
-                    <div class="yeah_pic">
-                        <img src="{INDEX_IMG_PATH}wqerrtw_15.png" alt="">
-                    </div>
-                    <div class="new_cont">
-                        <div class="new_cont_tit">
-                            <h4>甜蜜豆沙面包</h4>
-                        </div>
-                        <div class="design">
-                            <h5>没有什么是设计解决不了的／设计大赛获奖感言</h5>
-                            <em><i>&#xe61c;</i>2018-04-17</em>
-                        </div>
-                        <div class="hr">
-                            <div class="zd"></div>
-                            <div class="yd"></div>
-                        </div>
-                        <p class="content_zi">设计是把一种计划、规划、设想通过某种形式传达出来的活动过程。人类通过劳动改造世界，创造文明，创造物质财富和精神财富，而最基础、 最主要的创造活动是造物。设计便是造物活动进行预先的计划。最主要的创造活动是造物。设计便是造物活动进行预先的计划……</p>
-                    </div>
-                </li>
+                {/foreach}
             </ul>
         </div>
         <!--分页-->
@@ -310,3 +212,7 @@
     </div>
 </body>
 </html>
+<script>
+    var a=$('.content_zi').html().substr(0,200);
+    $('.content_zi').html(a+'...');
+</script>

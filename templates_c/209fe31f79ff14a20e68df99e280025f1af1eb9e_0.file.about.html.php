@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 17:01:23
+/* Smarty version 3.1.30, created on 2018-04-19 10:55:32
   from "E:\phpstudy\WWW\meishi\templates\index\about.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad709631470b8_72449780',
+  'unifunc' => 'content_5ad8052459c609_32523269',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '209fe31f79ff14a20e68df99e280025f1af1eb9e' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\about.html',
-      1 => 1524042030,
+      1 => 1524106495,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad709631470b8_72449780 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad8052459c609_32523269 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,21 +54,21 @@ logo.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=baker">
+                    <a href="index.php?m=index&f=baker">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>THE</b>Baker</p>
                         <p class="nav_name">面点师</p>
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=product">
+                    <a href="index.php?m=index&f=product">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">面点推荐</p>
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=news">
+                    <a href="index.php?m=index&a=news&f=news">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">新闻中心</p>

@@ -29,10 +29,10 @@ class pages{
         $this->now=$this->current+1;
         $this->str='<nav aria-label="Page navigation">
                   <ul class="pagination">';
-        $this->str.="<li><span>{$this->now}/{$this->totalpage}</span></li>";
-        $this->str.="<li><a href='{$url}0'>首页</a></li>";
+        $this->str.="<li class='a1'><span>{$this->now}/{$this->totalpage}</span></li>";
+        $this->str.="<li class='a2'><a href='{$url}0'>首页</a></li>";
         $prev=$this->current-1<0? 0:$this->current-1;
-        $this->str.="<li><a href='{$url}{$prev}'>&laquo;</a></li>";
+        $this->str.="<li><a class='prev' href='{$url}{$prev}'>&laquo;</a></li>";
         $start=$this->current-2<0 ? 0 : $this->current-2;
         $end=$this->current+2>$this->totalpage-1 ? $this->totalpage-1:$this->current+2;
         for($i=$start;$i<=$end;$i++){
@@ -44,9 +44,9 @@ class pages{
             }
         }
         $next=$this->current+1>$this->totalpage-1? $this->totalpage-1:$this->current+1;
-        $this->str.="<li><a href='{$url}{$next}'>&raquo;</a></li>";
+        $this->str.="<li><a class='next' href='{$url}{$next}'>&raquo;</a></li>";
         $last=$this->totalpage-1;
-        $this->str.="<li><a href='{$url}{$last}'>尾页</a></li>";
+        $this->str.="<li class='a3'><a href='{$url}{$last}'>尾页</a></li>";
         $this->str.="</ul></nav>";
         $this->limit .= " limit " . $this->current * $this->pagenum . "," . $this->pagenum;
     }

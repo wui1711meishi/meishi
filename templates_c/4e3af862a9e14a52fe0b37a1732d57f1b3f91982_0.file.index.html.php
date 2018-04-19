@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 15:13:07
+/* Smarty version 3.1.30, created on 2018-04-19 10:55:03
   from "E:\phpstudy\WWW\meishi\templates\index\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6f003708de9_44681998',
+  'unifunc' => 'content_5ad80507d71c74_72323317',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4e3af862a9e14a52fe0b37a1732d57f1b3f91982' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\index.html',
-      1 => 1524035585,
+      1 => 1524106422,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6f003708de9_44681998 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad80507d71c74_72323317 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,21 +80,21 @@ logo.png" alt="">
 				</a>
 			</li>
 			<li>
-				<a href="index.php?m=index&a=baker">
+				<a href="index.php?m=index&f=baker">
 					<div class="nav_line"></div>
 					<p class="nav_ename"><b>THE</b>Baker</p>
 					<p class="nav_name">面点师</p>
 				</a>
 			</li>
 			<li>
-				<a href="index.php?m=index&a=product">
+				<a href="index.php?m=index&f=product">
 					<div class="nav_line"></div>
 					<p class="nav_ename"><b>REC</b>OMMENDATION</p>
 					<p class="nav_name">面点推荐</p>
 				</a>
 			</li>
 			<li>
-				<a href="index.php?m=index&a=news">
+				<a href="index.php?m=index&a=news&f=news">
 					<div class="nav_line"></div>
 					<p class="nav_ename"><b>REC</b>OMMENDATION</p>
 					<p class="nav_name">新闻中心</p>

@@ -53,19 +53,24 @@ class index extends adminPar
     }
     //艾美挚美
     function aimei(){
+
+        $db=new db();
+        $db->table='product';
+        $arr=$db->selAll('*'," 1 order by id desc limit 0,5 ");
+        $this->smarty->assign('proarr',$arr);
+        //分页
+        $row=$db->selOne('count(*) as total');
+        $a=new pages($row['total'],8);
+        $a->pagestr();
+        $arr=$db->selAll('*'," 1 order by id desc  ".$a->limit);
+        $this->smarty->assign('pagestr',$a->str);
+        $this->smarty->assign('proarr2',$arr);
+
         $this->smarty->display('index/aimei.html');
     }
     //面点师
     function baker(){
         $this->smarty->display('index/baker.html');
-    }
-    //面点推荐
-    function product(){
-        $this->smarty->display('index/product.html');
-    }
-    //新闻中心
-    function news(){
-        $this->smarty->display('index/news.html');
     }
     //关于我们
     function about(){

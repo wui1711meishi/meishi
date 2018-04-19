@@ -349,6 +349,9 @@ body{
     box-shadow: 0 5px 10px 3px rgba(0,0,0,0.1);
     transform: scale(1.1);
 }
+.list_yeah>li>a{
+    display: block;
+}
 .yeah_pic{
     width: 260px;
     height: 136px;
@@ -445,6 +448,10 @@ body{
     right: -1px;
 }
 .content_zi{
+    width: 515px;
+    height: 65px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 12px;
     color: #8a8a8a;
     line-height: 22px;

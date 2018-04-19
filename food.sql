@@ -1,23 +1,23 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
--- https://www.phpmyadmin.net/
+-- version phpStudy 2014
+-- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: 2018-04-18 06:22:07
--- 服务器版本： 5.7.14
--- PHP Version: 5.6.25
+-- 主机: localhost
+-- 生成日期: 2018 �?04 �?19 �?10:57
+-- 服务器版本: 5.5.47
+-- PHP 版本: 5.5.30
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
--- Database: `food`
+-- 数据库: `food`
 --
 
 -- --------------------------------------------------------
@@ -26,8 +26,8 @@ SET time_zone = "+00:00";
 -- 表的结构 `article`
 --
 
-CREATE TABLE `article` (
-  `id` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `article` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(10) NOT NULL,
   `thumb` varchar(100) NOT NULL,
   `descrition` varchar(200) NOT NULL,
@@ -36,8 +36,9 @@ CREATE TABLE `article` (
   `pfdj` varchar(30) NOT NULL DEFAULT '8',
   `content` varchar(5000) NOT NULL,
   `look` int(100) NOT NULL DEFAULT '0',
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=8 ;
 
 --
 -- 转存表中的数据 `article`
@@ -58,12 +59,13 @@ INSERT INTO `article` (`id`, `title`, `thumb`, `descrition`, `uptime`, `xgtj`, `
 -- 表的结构 `baker`
 --
 
-CREATE TABLE `baker` (
-  `id` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `baker` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   `thumb` varchar(100) NOT NULL,
-  `descrition` varchar(1000) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+  `descrition` varchar(1000) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=6 ;
 
 --
 -- 转存表中的数据 `baker`
@@ -82,13 +84,15 @@ INSERT INTO `baker` (`id`, `name`, `thumb`, `descrition`) VALUES
 -- 表的结构 `category`
 --
 
-CREATE TABLE `category` (
-  `id` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `category` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` char(100) NOT NULL,
   `thumb` varchar(200) NOT NULL,
   `enname` varchar(200) NOT NULL,
-  `cid` int(10) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+  `cid` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=6 ;
 
 --
 -- 转存表中的数据 `category`
@@ -107,16 +111,17 @@ INSERT INTO `category` (`id`, `name`, `thumb`, `enname`, `cid`) VALUES
 -- 表的结构 `message`
 --
 
-CREATE TABLE `message` (
-  `id` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `message` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   `thumb` varchar(100) NOT NULL,
   `mess` varchar(255) NOT NULL,
   `nid` int(10) NOT NULL,
   `aid` int(10) NOT NULL,
   `cid` int(10) NOT NULL,
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=4 ;
 
 --
 -- 转存表中的数据 `message`
@@ -133,8 +138,8 @@ INSERT INTO `message` (`id`, `name`, `thumb`, `mess`, `nid`, `aid`, `cid`, `time
 -- 表的结构 `news`
 --
 
-CREATE TABLE `news` (
-  `id` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `news` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
   `descrition` varchar(300) NOT NULL,
   `thumb` varchar(200) NOT NULL,
@@ -142,8 +147,9 @@ CREATE TABLE `news` (
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `look` int(100) NOT NULL DEFAULT '0',
   `like` int(100) NOT NULL DEFAULT '0',
-  `recommend` int(100) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+  `recommend` int(100) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=8 ;
 
 --
 -- 转存表中的数据 `news`
@@ -164,8 +170,8 @@ INSERT INTO `news` (`id`, `title`, `descrition`, `thumb`, `content`, `time`, `lo
 -- 表的结构 `product`
 --
 
-CREATE TABLE `product` (
-  `id` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `product` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   `descrition` varchar(200) NOT NULL,
   `thumb` varchar(500) NOT NULL,
@@ -173,8 +179,10 @@ CREATE TABLE `product` (
   `uptime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `pfdj` int(10) NOT NULL,
   `recommend` varchar(100) NOT NULL DEFAULT '0',
-  `like` varchar(100) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+  `like` varchar(100) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=10 ;
 
 --
 -- 转存表中的数据 `product`
@@ -187,7 +195,9 @@ INSERT INTO `product` (`id`, `name`, `descrition`, `thumb`, `xgtj`, `uptime`, `p
 (4, '蜂蜜面包', '优等肉松/烘焙师推荐', 'upload/2018-04-1815240319231.png', '总店可购买', '2018-04-18 06:05:17', 8, '0', '0'),
 (5, '黑森林', '优等肉松/烘焙师推荐', 'upload/2018-04-1815240319368.png', '总店可购买', '2018-04-18 06:05:17', 8, '0', '0'),
 (6, '花香面包', '优等肉松/烘焙师推荐', 'upload/2018-04-1815240319455.png', '总店可购买', '2018-04-18 06:05:17', 8, '0', '0'),
-(7, '帝久包', '优等肉松/烘焙师推荐', 'upload/2018-04-1815240319531.png', '总店可购买', '2018-04-18 06:05:17', 8, '0', '0');
+(7, '帝久包', '优等肉松/烘焙师推荐', 'upload/2018-04-1815240319531.png', '总店可购买', '2018-04-18 06:05:17', 8, '0', '0'),
+(8, '测试面包', '测试面包测试面包', 'upload/2018-04-1815240472327.png', '本店购买', '2018-04-18 10:27:32', 8, '0', '0'),
+(9, '幻想面包', '优等肉松/烘焙师推荐', 'upload/2018-04-1915240984807.png', '本店购买', '2018-04-19 00:41:35', 8, '0', '0');
 
 -- --------------------------------------------------------
 
@@ -195,8 +205,8 @@ INSERT INTO `product` (`id`, `name`, `descrition`, `thumb`, `xgtj`, `uptime`, `p
 -- 表的结构 `user`
 --
 
-CREATE TABLE `user` (
-  `id` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `user` char(20) NOT NULL,
   `pass` char(100) NOT NULL,
   `name` varchar(100) NOT NULL,
@@ -207,8 +217,10 @@ CREATE TABLE `user` (
   `img` varchar(255) NOT NULL,
   `intro` varchar(2000) NOT NULL,
   `appiaise` varchar(1000) NOT NULL,
-  `expirence` varchar(3000) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+  `expirence` varchar(3000) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user` (`user`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=3 ;
 
 --
 -- 转存表中的数据 `user`
@@ -223,8 +235,8 @@ INSERT INTO `user` (`id`, `user`, `pass`, `name`, `telephone`, `birthday`, `home
 -- 表的结构 `webinfo`
 --
 
-CREATE TABLE `webinfo` (
-  `id` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `webinfo` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `webname` char(100) NOT NULL,
   `webaddress` char(100) NOT NULL,
   `webtelephone` char(100) NOT NULL,
@@ -232,8 +244,9 @@ CREATE TABLE `webinfo` (
   `webpublic` varchar(100) NOT NULL,
   `uploadtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `website` char(100) NOT NULL,
-  `copyright` char(100) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+  `copyright` char(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gbk AUTO_INCREMENT=2 ;
 
 --
 -- 转存表中的数据 `webinfo`
@@ -242,105 +255,6 @@ CREATE TABLE `webinfo` (
 INSERT INTO `webinfo` (`id`, `webname`, `webaddress`, `webtelephone`, `webemail`, `webpublic`, `uploadtime`, `website`, `copyright`) VALUES
 (1, 'aimei', '广东省深圳市深圳市中心部', '305-5050661', 'AIMEI@163.com', 'AIMEIMIANBAOFANG', '2018-04-17 01:43:21', 'AIMEI.duapp.com', '北京市公安局朝阳分局备案编号:110105000501   Copyright &copy; 2006-2016 ZCOOL');
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `article`
---
-ALTER TABLE `article`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `baker`
---
-ALTER TABLE `baker`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `category`
---
-ALTER TABLE `category`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `name` (`name`);
-
---
--- Indexes for table `message`
---
-ALTER TABLE `message`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `news`
---
-ALTER TABLE `news`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `product`
---
-ALTER TABLE `product`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `name` (`name`);
-
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `user` (`user`);
-
---
--- Indexes for table `webinfo`
---
-ALTER TABLE `webinfo`
-  ADD PRIMARY KEY (`id`);
-
---
--- 在导出的表使用AUTO_INCREMENT
---
-
---
--- 使用表AUTO_INCREMENT `article`
---
-ALTER TABLE `article`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
---
--- 使用表AUTO_INCREMENT `baker`
---
-ALTER TABLE `baker`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
---
--- 使用表AUTO_INCREMENT `category`
---
-ALTER TABLE `category`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
---
--- 使用表AUTO_INCREMENT `message`
---
-ALTER TABLE `message`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
--- 使用表AUTO_INCREMENT `news`
---
-ALTER TABLE `news`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
---
--- 使用表AUTO_INCREMENT `product`
---
-ALTER TABLE `product`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
---
--- 使用表AUTO_INCREMENT `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- 使用表AUTO_INCREMENT `webinfo`
---
-ALTER TABLE `webinfo`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

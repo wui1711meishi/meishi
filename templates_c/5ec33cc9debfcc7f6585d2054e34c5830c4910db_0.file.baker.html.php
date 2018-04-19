@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 16:39:14
+/* Smarty version 3.1.30, created on 2018-04-19 10:55:11
   from "E:\phpstudy\WWW\meishi\templates\index\baker.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad704324d7790_55225757',
+  'unifunc' => 'content_5ad8050ff277e3_44843551',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5ec33cc9debfcc7f6585d2054e34c5830c4910db' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\baker.html',
-      1 => 1524040752,
+      1 => 1524106437,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad704324d7790_55225757 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad8050ff277e3_44843551 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,21 +67,21 @@ logo.png" alt="">
                 </a>
             </li>
             <li class="active">
-                <a href="index.php?m=index&a=baker">
+                <a href="index.php?m=index&f=baker">
                     <div class="nav_line"></div>
                     <p class="nav_ename"><b>THE</b>Baker</p>
                     <p class="nav_name">面点师</p>
                 </a>
             </li>
             <li>
-                <a href="index.php?m=index&a=product">
+                <a href="index.php?m=index&f=product">
                     <div class="nav_line"></div>
                     <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                     <p class="nav_name">面点推荐</p>
                 </a>
             </li>
             <li>
-                <a href="index.php?m=index&a=news">
+                <a href="index.php?m=index&a=news&f=news">
                     <div class="nav_line"></div>
                     <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                     <p class="nav_name">新闻中心</p>
@@ -100,12 +100,18 @@ logo.png" alt="">
 <!--头部-->
 <!--面点师-->
 <div class="baker mybaker">
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['bakerarr']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
     <div class="baker_b_every">
         <a href="">
-            <img src="<?php echo INDEX_IMG_PATH;?>
-wqdsada_06.png" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['thumb'];?>
+" alt="">
             <div class="baker_every_introduceN">
-                <span>李师傅</span>
+                <span><?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
+</span>
                 <span>著名烘焙大师 西点师</span>
             </div>
             <div class="baker_every_introduceC">
@@ -115,47 +121,17 @@ wqdsada_06.png" alt="">
             <section></section>
         </a>
     </div>
-    <div class="baker_b_every">
-        <a href="">
-            <img src="<?php echo INDEX_IMG_PATH;?>
-wqdsada_06.png" alt="">
-            <div class="baker_every_introduceN">
-                <span>李师傅</span>
-                <span>著名烘焙大师 西点师</span>
-            </div>
-            <div class="baker_every_introduceC">
-                最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
-            </div>
-            <section></section>
-            <section></section>
-        </a>
-    </div>
-    <div class="baker_b_every">
-        <a href="">
-            <img src="<?php echo INDEX_IMG_PATH;?>
-wqdsada_06.png" alt="">
-            <div class="baker_every_introduceN">
-                <span>李师傅</span>
-                <span>著名烘焙大师 西点师</span>
-            </div>
-            <div class="baker_every_introduceC">
-                最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
-            </div>
-            <section></section>
-            <section></section>
-        </a>
-    </div>
+    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
 </div>
 <!--分页-->
-<div class="fenye">
-    <ul class="paging">
-        <li>上一页</li>
-        <li class="act">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>下一页</li>
-    </ul>
+<div class="fenye" style="text-align: center">
+    <?php echo $_smarty_tpl->tpl_vars['pagestr']->value;?>
+
 </div>
 <footer>
     <div class="empty"></div>
@@ -179,5 +155,9 @@ joinus_16.png" alt="">
     </div>
 </footer>
 </body>
-</html><?php }
+</html>
+<?php echo '<script'; ?>
+ src="<?php echo INDEX_JS_PATH;?>
+page.js"><?php echo '</script'; ?>
+><?php }
 }

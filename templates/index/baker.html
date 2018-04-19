@@ -33,21 +33,21 @@
                 </a>
             </li>
             <li class="active">
-                <a href="index.php?m=index&a=baker">
+                <a href="index.php?m=index&f=baker">
                     <div class="nav_line"></div>
                     <p class="nav_ename"><b>THE</b>Baker</p>
                     <p class="nav_name">面点师</p>
                 </a>
             </li>
             <li>
-                <a href="index.php?m=index&a=product">
+                <a href="index.php?m=index&f=product">
                     <div class="nav_line"></div>
                     <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                     <p class="nav_name">面点推荐</p>
                 </a>
             </li>
             <li>
-                <a href="index.php?m=index&a=news">
+                <a href="index.php?m=index&a=news&f=news">
                     <div class="nav_line"></div>
                     <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                     <p class="nav_name">新闻中心</p>
@@ -66,11 +66,12 @@
 <!--头部-->
 <!--面点师-->
 <div class="baker mybaker">
+    {foreach $bakerarr as $item}
     <div class="baker_b_every">
         <a href="">
-            <img src="{INDEX_IMG_PATH}wqdsada_06.png" alt="">
+            <img src="{$item['thumb']}" alt="">
             <div class="baker_every_introduceN">
-                <span>李师傅</span>
+                <span>{$item['name']}</span>
                 <span>著名烘焙大师 西点师</span>
             </div>
             <div class="baker_every_introduceC">
@@ -80,45 +81,11 @@
             <section></section>
         </a>
     </div>
-    <div class="baker_b_every">
-        <a href="">
-            <img src="{INDEX_IMG_PATH}wqdsada_06.png" alt="">
-            <div class="baker_every_introduceN">
-                <span>李师傅</span>
-                <span>著名烘焙大师 西点师</span>
-            </div>
-            <div class="baker_every_introduceC">
-                最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
-            </div>
-            <section></section>
-            <section></section>
-        </a>
-    </div>
-    <div class="baker_b_every">
-        <a href="">
-            <img src="{INDEX_IMG_PATH}wqdsada_06.png" alt="">
-            <div class="baker_every_introduceN">
-                <span>李师傅</span>
-                <span>著名烘焙大师 西点师</span>
-            </div>
-            <div class="baker_every_introduceC">
-                最好的朋友就是那批新鲜出炉的面包，烘焙刚好的面包伙伴，暖胃又暖心，天天都能让人思念
-            </div>
-            <section></section>
-            <section></section>
-        </a>
-    </div>
+    {/foreach}
 </div>
 <!--分页-->
-<div class="fenye">
-    <ul class="paging">
-        <li>上一页</li>
-        <li class="act">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>下一页</li>
-    </ul>
+<div class="fenye" style="text-align: center">
+    {$pagestr}
 </div>
 <footer>
     <div class="empty"></div>
@@ -142,3 +109,4 @@
 </footer>
 </body>
 </html>
+<script src="{INDEX_JS_PATH}page.js"></script>

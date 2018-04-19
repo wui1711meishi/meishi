@@ -239,6 +239,7 @@ header{
     font-family: "苹方 粗体";
     line-height: 20px;
     margin: 47px auto 0;
+    text-align: center;
 }
 /*box_main*/
 .box_line{
@@ -249,7 +250,7 @@ header{
     position: relative;
 }
 .time{
-    width: 139px;
+    width: 207px;
     height: 41px;
     margin: 0 auto;
     line-height: 41px;
@@ -286,7 +287,7 @@ header{
     color: #7e7e7e;
 }
 .maintext{
-    width: 783px;
+    width: 817px;
     margin: 42px auto 0;
     font-size: 11px;
     line-height: 19px;

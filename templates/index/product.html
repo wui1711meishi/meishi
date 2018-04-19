@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>艾美挚美</title>
     <link rel="stylesheet" href="{INDEX_CSS_PATH}twlb.css">
+    <script src="{JS_PATH}jquery-3.1.1.js"></script>
 </head>
 <body>
 <div class="product">
@@ -29,21 +30,21 @@
                         </a>
                     </li>
                     <li>
-                        <a href="index.php?m=index&a=baker">
+                        <a href="index.php?m=index&f=baker">
                             <div class="nav_line"></div>
                             <p class="nav_ename"><b>THE</b>Baker</p>
                             <p class="nav_name">面点师</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="index.php?m=index&a=product">
+                        <a href="index.php?m=index&f=product">
                             <div class="nav_line"></div>
                             <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                             <p class="nav_name">面点推荐</p>
                         </a>
                     </li>
                     <li>
-                        <a href="index.php?m=index&a=news">
+                        <a href="index.php?m=index&a=news&f=news">
                             <div class="nav_line"></div>
                             <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                             <p class="nav_name">新闻中心</p>
@@ -62,54 +63,30 @@
         <!--全部产品-->
     <div class="tw_content mypro">
             <ul class="prod_list">
+                {foreach $proarr as $item}
                 <li>
                     <div class="prod_pic">
-                        <img src="{INDEX_IMG_PATH}gw_25.png" alt="">
+                        <img src="{$item['thumb']}" alt="">
                     </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
+                    <p class="prod_list_name">{$item['name']}</p>
+                    <p class="hongbei">{$item['descrition']}</p>
+                    <p class="hongbei">{$item['xgtj']}</p>
                     <i class="jia">&#xe651;</i>
                 </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="{INDEX_IMG_PATH}gw_27.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="{INDEX_IMG_PATH}gw_29.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="{INDEX_IMG_PATH}gw_25.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
+                {/foreach}
             </ul>
     </div>
         <!--分页-->
-        <div class="fenye">
-            <ul class="paging">
-                <li>上一页</li>
-                <li class="act">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>下一页</li>
-            </ul>
+        <div class="fenye" style="text-align: center">
+            {$pagestr}
+            <!--<ul class="paging">-->
+                <!--<li>上一页</li>-->
+                <!--<li class="act">1</li>-->
+                <!--<li>2</li>-->
+                <!--<li>3</li>-->
+                <!--<li>4</li>-->
+                <!--<li>下一页</li>-->
+            <!--</ul>-->
         </div>
     <footer>
         <div class="empty"></div>
@@ -134,3 +111,4 @@
 </div>
 </body>
 </html>
+<script src="{INDEX_JS_PATH}page.js"></script>

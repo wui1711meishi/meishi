@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-04-18 14:53:32
+/* Smarty version 3.1.30, created on 2018-04-19 10:55:06
   from "E:\phpstudy\WWW\meishi\templates\index\aimei.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ad6eb6c180f36_03287306',
+  'unifunc' => 'content_5ad8050a8e28c4_36472094',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6d06839956383b3d74a051bcb379365424f8c6b3' => 
     array (
       0 => 'E:\\phpstudy\\WWW\\meishi\\templates\\index\\aimei.html',
-      1 => 1524033872,
+      1 => 1524106475,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad6eb6c180f36_03287306 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad8050a8e28c4_36472094 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,6 +29,10 @@ function content_5ad6eb6c180f36_03287306 (Smarty_Internal_Template $_smarty_tpl)
 	<title>艾美挚美</title>
 	<link rel="stylesheet" href="<?php echo INDEX_CSS_PATH;?>
 twlb.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery-3.1.1.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
     <!--导航-->
@@ -54,21 +58,21 @@ logo.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=baker">
+                    <a href="index.php?m=index&f=baker">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>THE</b>Baker</p>
                         <p class="nav_name">面点师</p>
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=product">
+                    <a href="index.php?m=index&f=product">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">面点推荐</p>
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?m=index&a=news">
+                    <a href="index.php?m=index&a=news&f=news">
                         <div class="nav_line"></div>
                         <p class="nav_ename"><b>REC</b>OMMENDATION</p>
                         <p class="nav_name">新闻中心</p>
@@ -113,24 +117,26 @@ logo.png" alt="">
                 <div class="dunets">
                     <div class="dunets2">
                         <div class="dunets_pic">
-                            <img src="<?php echo INDEX_IMG_PATH;?>
-gw_04.png" alt="">
+                            <img src="<?php echo $_smarty_tpl->tpl_vars['proarr']->value[0]['thumb'];?>
+" alt="">
                         </div>
                         <p class="ttq">DUNETS</p>
-                        <p class="minttq">迷 你 甜 甜 圈</p>
-                        <a href="" class="tmore">MORE</a>
+                        <p class="minttq"><?php echo $_smarty_tpl->tpl_vars['proarr']->value[0]['name'];?>
+</p>
+                        <a href="index.php?a=index&f=index&a=article" class="tmore">MORE</a>
                     </div>
                 </div>
                 <div class="dunets_right">
                     <div class="hybared">
-                        <h3>黄油酥松面包</h3>
+                        <h3><?php echo $_smarty_tpl->tpl_vars['proarr']->value[1]['name'];?>
+</h3>
                         <p>新鲜出炉的那批面包，烘焙刚好的</p>
                         <p>Chocolate mousse cake</p>
                     </div>
                     <div class="hybared_pic">
                         <a href="" class="srbared">
-                            <img src="<?php echo INDEX_IMG_PATH;?>
-gw_08.png" alt="">
+                            <img src="<?php echo $_smarty_tpl->tpl_vars['proarr']->value[1]['thumb'];?>
+" alt="">
                         </a>
                     </div>
                 </div>
@@ -139,23 +145,25 @@ gw_08.png" alt="">
                 <ul class="djcp_show">
                     <li>
                         <div class="Chocolates">
-                            <h3 class="cake">乳酪奶油新鲜奶生日蛋糕</h3>
+                            <h3 class="cake"><?php echo $_smarty_tpl->tpl_vars['proarr']->value[2]['name'];?>
+</h3>
                             <p class="introduce">The best of friends bread is fresh </p>
                             <p class="cakemore">MORE</p>
                         </div>
                         <div class="Chocolates_pic">
-                            <img src="<?php echo INDEX_IMG_PATH;?>
-gw_16.png" alt="">
+                            <img src="<?php echo $_smarty_tpl->tpl_vars['proarr']->value[2]['thumb'];?>
+" alt="">
                         </div>
                     </li>
                     <li>
                         <div class="choco">
-                            <img src="<?php echo INDEX_IMG_PATH;?>
-gw_12.png" alt="">
+                            <img src="<?php echo $_smarty_tpl->tpl_vars['proarr']->value[3]['thumb'];?>
+" alt="">
                             <h2 class="choco_name">CHOCOLATES</h2>
                             <p class="choco_int">BLACK SPECIAL CAKE</p>
                             <a href="" class="choco_more">MORE</a>
-                            <p class="qname">乳酪奶油新鲜奶个性欧式坚果生日蛋糕</p>
+                            <p class="qname"><?php echo $_smarty_tpl->tpl_vars['proarr']->value[3]['name'];?>
+</p>
                         </div>
                         <div class="hot">
                             <p class="hot_zi">热度&nbsp;</p><h2>120</h2><p class="hot_zi">&nbsp;&nbsp;Bread consciousness</p>
@@ -164,13 +172,14 @@ gw_12.png" alt="">
                     </li>
                     <li>
                         <div class="Chocolates">
-                            <h3 class="cake">巧克力松软面包</h3>
-                            <p class="introduce">新鲜出炉的那批面包烘焙刚好的面包伙伴</p>
+                            <h3 class="cake"><?php echo $_smarty_tpl->tpl_vars['proarr']->value[4]['name'];?>
+</h3>
+                            <p class="introduce">balabala</p>
                             <p class="cakemore">MORE</p>
                         </div>
                         <div class="Chocolates_pic">
-                            <img src="<?php echo INDEX_IMG_PATH;?>
-gw_18.png" alt="">
+                            <img src="<?php echo $_smarty_tpl->tpl_vars['proarr']->value[4]['thumb'];?>
+" alt="">
                         </div>
                     </li>
                 </ul>
@@ -198,101 +207,45 @@ gw_09.png" alt="" class="rain_leaf">
                 </div>
             </div>
             <ul class="prod_list">
+                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['proarr2']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
                 <li>
                     <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_25.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['thumb'];?>
+" alt="">
                     </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
+                    <p class="prod_list_name"><?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
+</p>
+                    <p class="hongbei"><?php echo $_smarty_tpl->tpl_vars['item']->value['descrition'];?>
+</p>
+                    <p class="hongbei"><?php echo $_smarty_tpl->tpl_vars['item']->value['xgtj'];?>
+</p>
                     <i class="jia">&#xe651;</i>
                 </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_27.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_29.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_25.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-            </ul>
-            <ul class="prod_list">
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_25.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_27.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_29.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
-                <li>
-                    <div class="prod_pic">
-                        <img src="<?php echo INDEX_IMG_PATH;?>
-gw_25.png" alt="">
-                    </div>
-                    <p class="prod_list_name">肉松夹层</p>
-                    <p class="hongbei">烘焙师推荐/优等肉松</p>
-                    <p class="hongbei">本店首选</p>
-                    <i class="jia">&#xe651;</i>
-                </li>
+                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
             </ul>
         </div>
         <!--分页-->
-        <div class="fenye">
-            <ul class="paging">
-                <li>上一页</li>
-                <li class="act">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>下一页</li>
-            </ul>
-        </div>
+        <div style="text-align: center"><?php echo $_smarty_tpl->tpl_vars['pagestr']->value;?>
+</div>
+        <!--<div class="fenye">-->
+            <!--<ul class="paging">-->
+                <!--<li>上一页</li>-->
+                <!--<li class="act">1</li>-->
+                <!--<li>2</li>-->
+                <!--<li>3</li>-->
+                <!--<li>4</li>-->
+                <!--<li>下一页</li>-->
+            <!--</ul>-->
+        <!--</div>-->
     </div>
     <footer>
         <div class="empty"></div>
@@ -316,5 +269,9 @@ joinus_16.png" alt="">
         </div>
     </footer>
 </body>
-</html><?php }
+</html>
+<?php echo '<script'; ?>
+ src="<?php echo INDEX_JS_PATH;?>
+page.js"><?php echo '</script'; ?>
+><?php }
 }

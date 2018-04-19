@@ -699,3 +699,36 @@ botton{
 	overflow: hidden;
 	padding: 0;
 }
+/*全部产品*/
+.prod_list{
+	width:100%;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+/*分页*/
+.pagination{
+	display: flex;
+	justify-content: center;
+}
+.pagination .a1,.pagination .a2,.pagination .a3{
+	display: none;
+}
+.pagination li{
+	padding: 5px 5px;
+	border-radius: 50%;
+}
+.pagination li a{
+
+	font-size:12px;
+	color: #333;
+}
+.pagination li.active{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: #f1cc3d;
+	color: #ffffff;
+}
