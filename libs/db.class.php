@@ -9,11 +9,11 @@
 
 header('content-type:text/html;charset=utf-8');
 class db{
-    private $host='localhost';
-    private $username='root';
-    private $pass='root';
-    private $dbname='food';
-    private $port=3306;
+    private $host='sqld.duapp.com';
+    private $username='f0d8ac15801042b79ff021ec66cf4ad2';
+    private $pass='aa15ce8f7dcd47ea925f6bb901061fa4';
+    private $dbname='raCvlAusnWhgHPSbJwWN';
+    private $port=4050;
     public $db;
     public $table;
     function __construct(){
